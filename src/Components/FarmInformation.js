@@ -109,7 +109,7 @@ return (
 
 
 <section className='farmweather'>
-<Weather cityname={this.state.city} startdate={this.state.startdate} enddate={this.state.enddate}/>
+<FarmWeather cityname={this.state.city} startdate={this.state.startdate} enddate={this.state.enddate}/>
 </section>
 
 
