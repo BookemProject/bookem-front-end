@@ -5,12 +5,18 @@ class FirstSection extends React.Component {
     render() {
       return (
         <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Text>
-          <p>It is a site that allows all customers and owners of pre-rented farms to see all the pastures' details, features, and reservations. It also secures credibility between the tenant and the lessor and is always keen to ensure all the paperwork and official transactions needed by both parties, in addition to the existence of cooperation with approved companies to clean houses and others to maintain all facilities The farm used by the client.</p>
+          <p>Bookem is a website that gives the user ease of use to search for farms anywhere in jordan, and create a booking service in the website To facilitate communication with Home/Farm owners.</p>
+         <h4> Aims and objectives</h4>
+<p>-	Improving the quality of trips and travel by allowing people to find a place to travel as comfortable as home and at a lower cost than staying in hotels.
+-	The first website in Jordan for farm reservations </p>
+  <h4>Target Customer</h4>
+	<p>Everyone interested in traveling and trips
+	Home/Farm owners. </p>
 
-         <h2>What distinguishes us is the credibility of our dealings.</h2> 
+         
           </Card.Text>
         </Card.Body>
       </Card>
