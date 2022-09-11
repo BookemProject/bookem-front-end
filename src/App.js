@@ -14,9 +14,9 @@ import MyCollections from './Components/MyCollections';
 import FooterAfterLogin from './Components/FooterAfterLogin';
 import HeaderBeforeLogin from './Components/HeaderBeforeLogin';
 import HomeBeforeLogin from './Components/HomeBeforeLogin';
-import AboutUsBeforeLogin from './Components/AboutUsBeforeLogin';
-import Services from './Components/Services';
-import Testimonials from './Components/Testimonials';
+// import AboutUsBeforeLogin from './Components/AboutUsBeforeLogin';
+// import Services from './Components/Services';
+// import Testimonials from './Components/Testimonials';
 import FooterBeforeLogin from './Components/FooterBeforeLogin';
 
 
@@ -36,22 +36,22 @@ class App extends React.Component {
               >
               </Route>
               <Route 
-                exact path="/AboutUs"
+                exact path="/aboutUs"
                 element={<AboutUsAfterLogin />}
               >
               </Route>
               <Route 
-                exact path="/OurTeam"
+                exact path="/ourTeam"
                 element={<OurTeam />}
               >
               </Route>
               <Route 
-                exact path="/Profile"
+                exact path="/profile"
                 element={<Profile />}
               >
               </Route>
               <Route 
-                exact path="/MyCollections"
+                exact path="/myCollections"
                 element={<MyCollections />}
               >
               </Route>
@@ -69,21 +69,21 @@ class App extends React.Component {
                 element={<HomeBeforeLogin />}
               >
               </Route>
-              <Route 
-                exact path="/AboutUs"
+              {/* <Route 
+                exact path="/aboutUs"
                 element={<AboutUsBeforeLogin />}
               >
               </Route>
               <Route 
-                exact path="/Services"
+                exact path="/services"
                 element={<Services />}
               >
               </Route>
               <Route 
-                exact path="/Testimonials"
+                exact path="/testimonials"
                 element={<Testimonials />}
               >
-              </Route>
+              </Route> */}
               
             </Routes>
             {<FooterBeforeLogin />}

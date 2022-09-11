@@ -18,11 +18,11 @@ class FooterAfterLogin extends React.Component {
         </Col>
         <Col  className = "column">     
     <ListGroup>
-      <ListGroup.Item><Link to="/HomeAfterLogin" >Home</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/AboutUs" >About Us </Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/OurTeam" >Our Team</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/Profile" >Profile</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/MyCollections" >My Collections</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/" >Home</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/aboutUs" >About Us </Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/ourTeam" >Our Team</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/profile" >Profile</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/myCollections" >My Collections</Link></ListGroup.Item>
     </ListGroup>
     </Col>
         <Col  className = "column">      
