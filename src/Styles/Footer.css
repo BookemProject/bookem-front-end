@@ -1,0 +1,17 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #icons{
+    display: inline-block;
+    float: right;
+    position: relative;
+  top: 50px; left: 86px;
+  }
