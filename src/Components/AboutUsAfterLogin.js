@@ -1,10 +1,15 @@
 import React from 'react';
+import FirstSection from "./FirstSection";
+import SacendSection from "./SacendSection";
+import ThirdSection from "./ThirdSection";
 
 class AboutUsAfterLogin extends React.Component {
     render() {
       return (
            <div>
-           About Us After Login
+           <FirstSection />
+           <SacendSection />
+           <ThirdSection />
            </div>
         )
     }
