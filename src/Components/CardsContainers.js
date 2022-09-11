@@ -41,13 +41,13 @@ class CardsContainers extends React.Component {
               return (
                 <Col>
                 <div id="wrapper">
-                  <Card style={{ width: "18rem" }} id="card" key={item}>
-                    <Card.Img variant="top" src={item.imgURL} id="cardImg" />
-                    <Card.Body id="info">
+                  <Card style={{ width: "18rem",  }} id="card" key={item}>
+                    <Card.Img variant="top" src={item.imgURL} id="cardImg"  />
+                    <Card.Body id="info" style={{ margin: "-10px 0px",  }}>
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
-                      <Button variant="outline-info" id="btn" onClick={() => this.farm(item)}> More Detail </Button>
+                      <Button variant="outline-info" id="btn1" onClick={() => this.farm(item)}> More Detail </Button>
                       <Button variant="outline-danger" id="btn" onClick={""}  > ♥️ </Button>
                       {/* <FarmInformation 
                       itemData = {this.item}
