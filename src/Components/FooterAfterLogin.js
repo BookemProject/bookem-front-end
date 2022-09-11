@@ -12,29 +12,29 @@ class FooterAfterLogin extends React.Component {
   render() {
     return (
         <Container>
-    <Row>
-        <Col>
+    <Row class="row:after">
+        <Col  class = "column">
         <img src={require("../images/BOOKEM.webp")} alt="" />
         </Col>
-        <Col>     
+        <Col  class = "column">     
     <ListGroup>
-      <ListGroup.Item><Link to="" >Home</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/HomeAfterLogin" >Home</Link></ListGroup.Item>
       <ListGroup.Item><Link to="/AboutUs" >About Us </Link></ListGroup.Item>
       <ListGroup.Item><Link to="/OurTeam" >Our Team</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="" >Profile</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="" >My Collections</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/Profile" >Profile</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/MyCollections" >My Collections</Link></ListGroup.Item>
     </ListGroup>
     </Col>
-        <Col>      
+        <Col  class = "column">      
         <p> All right reserved © Web Name | 2022</p>
         <div id="icons">
-            <img src="images/fb-icon.png" alt="" />
-            <img src="images/insta-icon.png" alt="" />
-            <img src="images/pint-icon.png" alt="" />
+        <img src={require("../images/fb-icon.png")}alt="" />
+            <img src={require("../images/insta-icon.png")} alt="" />
+            <img src={require("../images/pint-icon.png")} alt="" />
       </div>
       </Col>
 
-        <Col> <LogoutButton /></Col>
+        <Col  class = "column"> <LogoutButton /></Col>
       </Row>
     </Container>
    
