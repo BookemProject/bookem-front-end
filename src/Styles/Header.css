@@ -13,7 +13,7 @@
 #navigation {
     background-color: white;
     border-bottom: 1px solid grey;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 #logo {
@@ -27,8 +27,4 @@
 
 .special {
     margin-right: 25px;
-}
-
-#responsive-navbar-nav {
-    
 }
