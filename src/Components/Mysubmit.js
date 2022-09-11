@@ -159,17 +159,18 @@ render(){
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom" htmlFor="Select">Select Menu</Form.Label>
           <Form.Select id="Select" name = "City">
-            <option value = "Amman" id="options"> Amman</option>
-            <option value = "Az Zarqa" id="options"> Az Zarqa</option>
-            <option value = "Irbid" id="options"> Irbid</option>
-            <option value = "Jerrash" id="options"> Jerrash</option>
-            <option value = "Al Tafela" id="options"> Al Tafela</option>
-            <option value = "Al Karak" id="options"> Al Karak</option>
-            <option value = "Ajloun" id="options"> Ajloun</option>
-            <option value = "Aqaba" id="options"> Aqaba</option>
-            <option value = "Maan" id="options"> Maan</option>
-            <option value = "Madaba" id="options"> Madaba</option>
-            <option value = "Al Mafraq" id="options"> Al Mafraq</option>
+            <option value = "Ajloun" id="options">Ajloun</option>
+            <option value = "Amman" id="options">Amman</option>
+            <option value = "Aqaba" id="options">Aqaba</option>
+            <option value = "Balqa" id="options">Balqa</option>
+            <option value = "Irbid" id="options">Irbid</option>
+            <option value = "Jerash" id="options">Jerash</option>
+            <option value = "Karak" id="options">Karak</option>
+            <option value = "Ma'an" id="options">Ma'an</option>
+            <option value = "Madaba" id="options">Madaba</option>
+            <option value = "Mafraq" id="options">Mafraq</option>
+            <option value = "Tafilah" id="options">Tafilah</option>
+            <option value = "Zarqa" id="options">Zarqa</option>
           </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3" name = "checklist">
