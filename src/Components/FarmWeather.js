@@ -5,7 +5,7 @@ const URL_WEATHER='https://api.weatherapi.com/v1/forecast.json';
 // https://api.weatherapi.com/v1/forecast.json?key=f17b33956c554c1b985234920223008&q=amman&days=1&dt=2022-09-20
 
 
-class Weather extends React.Component{
+class FarmWeather extends React.Component{
 
   constructor(props){
 
@@ -62,4 +62,4 @@ return (
 
 
 
-export default Weather;
+export default FarmWeather;
