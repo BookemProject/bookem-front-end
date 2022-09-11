@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import "./src/Styles/cards.css";
+import "../Styles/Cards.css";
 import FarmInformation from "./FarmInformation";
 
 class CardsContainers extends React.Component {
@@ -35,23 +35,23 @@ class CardsContainers extends React.Component {
       <div>
         {this.state.cards.length ? (
             <Container id="bodyCard">
-              <Row gy-3 my-3>
+              <Row xs={1} md={3} lg={4} className="g-4">
           
             {this.state.cards.map((item) => {
               return (
-                <Col xs lg="2">
+                <Col>
                 <div id="wrapper">
                   <Card style={{ width: "18rem" }} id="card" key={item}>
                     <Card.Img variant="top" src={item.imgURL} id="cardImg" />
                     <Card.Body id="info">
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
-                      <Card.Text id="cardText">{item.description}</Card.Text>
-                      <Button variant="outline-danger" id="btn" onClick={this.addnewfav(item._id)}  > ♥️ </Button>
+                      {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
                       <Button variant="outline-info" id="btn" onClick={() => this.farm(item)}> More Detail </Button>
-                      <FarmInformation 
+                      <Button variant="outline-danger" id="btn" onClick={""}  > ♥️ </Button>
+                      {/* <FarmInformation 
                       itemData = {this.item}
-                      />
+                      /> */}
                     </Card.Body>
                   </Card>
                 </div>
