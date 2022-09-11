@@ -1,9 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Form from "react-bootstrap/Form";
 import React from "react";
 import axios from "axios";
 import FarmMap from "./FarmMap";
-import Weather from "./FarmWeather";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from "react-bootstrap/Form";
+import FarmWeather from "./FarmWeather";
 const URL_LOCATIONIQ='https://eu1.locationiq.com/v1/search';
 const LOCATION_KEY='pk.e6f569abb6089f922ac76a14ac4bc5e4';
 
@@ -70,7 +70,7 @@ render(){
 return (
 <>
 
-<section class= 'farmoverview'>
+<section className= 'farmoverview'>
 
   {/* <h2> Farmname: {this.props.farm.farmName}</h2>
   <img src={this.props.farm.imgURL} >  </img>
@@ -89,10 +89,10 @@ return (
 </section>
 
 
-<section class='farmlocation'>
+<section className='farmlocation'>
 <FarmMap  latitude={this.state.latitude} longitude={this.state.longitude}/>
 </section>
-<section class='checkinandcheckout'>
+<section className='checkinandcheckout'>
 
 <Form onChange={this.handleStartDate}>
     <Form.Label>From:</Form.Label>
@@ -108,14 +108,13 @@ return (
 </section>
 
 
-<section class='farmweather'>
+<section className='farmweather'>
 <Weather cityname={this.state.city} startdate={this.state.startdate} enddate={this.state.enddate}/>
 </section>
 
 
 </>
 )}}
-
 
 
 export default FarmInformation;
