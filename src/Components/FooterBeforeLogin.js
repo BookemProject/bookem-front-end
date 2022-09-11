@@ -13,7 +13,7 @@ class FooterBeforeLogin extends React.Component {
         <Container>
     <Row>
         <Col> 
-         <img src="images/BOOKEM.svg" alt="" />
+         <img src={require("../images/BOOKEM.webp")} alt="" />
           </Col>
       
         <Col> 
@@ -26,7 +26,7 @@ class FooterBeforeLogin extends React.Component {
     </ListGroup>
     </Col>
         <Col>
-        <h3> All right reserved © Web Name | 2022</h3>
+        <p> All right reserved © Web Name | 2022</p>
         <div id="icons">
             <img src="images/fb-icon.png" alt="" />
             <img src="images/insta-icon.png" alt="" />
