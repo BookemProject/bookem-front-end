@@ -10,11 +10,15 @@ class FirstSection extends React.Component {
           <Card.Text>
           <p>Bookem is a website that gives the user ease of use to search for farms anywhere in jordan, and create a booking service in the website To facilitate communication with Home/Farm owners.</p>
          <h4> Aims and objectives</h4>
-<p>-	Improving the quality of trips and travel by allowing people to find a place to travel as comfortable as home and at a lower cost than staying in hotels.
--	The first website in Jordan for farm reservations </p>
-  <h4>Target Customer</h4>
-	<p>Everyone interested in traveling and trips
-	Home/Farm owners. </p>
+         <ul>
+       <li>	Improving the quality of trips and travel by allowing people to find a place to travel as comfortable as home and at a lower cost than staying in hotels. </li>
+       
+       <li>	The first website in Jordan for farm reservations </li></ul>
+     <h4>Target Customer</h4>
+     <ul>
+    <li>
+      Everyone interested in traveling and trips</li>
+	    <li> Home/Farm owners. </li> </ul>
 
          
           </Card.Text>
