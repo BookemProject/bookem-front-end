@@ -1,0 +1,25 @@
+#bodyCard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+}
+
+#wrapper{
+margin: 20px;
+width: fit-content;
+height: fit-content;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+  }
+  #btn{
+    width: 100px;
+    margin-left:28%;
+
+  }

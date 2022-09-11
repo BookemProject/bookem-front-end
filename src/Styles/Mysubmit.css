@@ -1,0 +1,57 @@
+
+
+
+#mainDivsubmit{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+   
+
+    
+
+    
+  }
+  #options{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  #CardForm #textInFrom{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+  }
+#myCardsubmit{
+    width: 300px;
+    width: 400px;
+}
+#myCardsubmit2{
+    margin: 20px;
+    width: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+#CardForm{
+    width: 600px;
+    padding: 40px;
+    margin: 30px;
+    
+    
+    
+}
+#GridItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#GridItems .mb-3{
+    margin: 10px;
+ 
+}
+#myButton{
+    margin-left:10px;
+}
+

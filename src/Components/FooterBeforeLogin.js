@@ -5,9 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
-
 import LoginButton from './LoginButton';
-import "./Styles/Footer.css";
+import "../Styles/Footer.css";
 class FooterBeforeLogin extends React.Component {
   render() {
     return (
