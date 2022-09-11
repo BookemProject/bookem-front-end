@@ -1,11 +1,11 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import '../Styles/Header.css';
+// import '../Styles/Header.css';
 
 class Filter extends React.Component {
     render() {
       return (
-        <Nav justify variant="tabs" defaultActiveKey="/home">
+        <Nav justify variant="tabs" style={{ textDecoration: 'none', color: 'black' }}>
         <Nav.Item>
           <Nav.Link eventKey="link-1">Ajloun</Nav.Link>
         </Nav.Item>
