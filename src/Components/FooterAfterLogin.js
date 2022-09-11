@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import LogoutButton from './LogoutButton';
-import "./Styles/Footer.css";
+import "../Styles/Footer.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Header extends React.Component {
   render() {
     return (
