@@ -54,7 +54,6 @@ class CardsContainers extends React.Component {
                       />
                     </Card.Body>
                   </Card>
-        
                 </div>
                 </Col>
               );
@@ -72,5 +71,6 @@ class CardsContainers extends React.Component {
     );
   }
 }
+
 
 export default CardsContainers;
