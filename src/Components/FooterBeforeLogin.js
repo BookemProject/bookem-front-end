@@ -11,12 +11,12 @@ class FooterBeforeLogin extends React.Component {
   render() {
     return (
         <Container>
-    <Row class="row:after">
-        <Col class = "column"> 
+    <Row className="row:after">
+        <Col className = "column"> 
          <img src={require("../images/BOOKEM.webp")} alt="" />
           </Col>
       
-        <Col  class = "column"> 
+        <Col  className = "column"> 
         <ListGroup>
         <ListGroup.Item><Link href="#Home" >Home</Link></ListGroup.Item>
       <ListGroup.Item><Link href="#AboutUs" >About Us </Link></ListGroup.Item>
@@ -25,18 +25,18 @@ class FooterBeforeLogin extends React.Component {
       <ListGroup.Item><Link href="#Testimonials" >Testimonials</Link></ListGroup.Item>
     </ListGroup>
     </Col>
-        <Col  class = "column">
+        <Col  className = "column">
         <p> All right reserved © Web Name | 2022</p>
         <div id="icons">
             <img src={require("../images/fb-icon.png")}alt="" />
             <img src={require("../images/insta-icon.png")} alt="" />
             <img src={require("../images/pint-icon.png")} alt="" />
       </div>
-        
-        </Col >
-
-        <Col  class = "column"><LoginButton /></Col>
+      </Col>
+       
+        <Col  className = "column"><LoginButton /></Col>
       </Row>
+   
     </Container>
    
     )

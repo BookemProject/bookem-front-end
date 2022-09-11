@@ -12,11 +12,11 @@ class FooterAfterLogin extends React.Component {
   render() {
     return (
         <Container>
-    <Row class="row:after">
-        <Col  class = "column">
+    <Row className="row:after">
+        <Col  className = "column">
         <img src={require("../images/BOOKEM.webp")} alt="" />
         </Col>
-        <Col  class = "column">     
+        <Col  className = "column">     
     <ListGroup>
       <ListGroup.Item><Link to="/HomeAfterLogin" >Home</Link></ListGroup.Item>
       <ListGroup.Item><Link to="/AboutUs" >About Us </Link></ListGroup.Item>
@@ -25,7 +25,7 @@ class FooterAfterLogin extends React.Component {
       <ListGroup.Item><Link to="/MyCollections" >My Collections</Link></ListGroup.Item>
     </ListGroup>
     </Col>
-        <Col  class = "column">      
+        <Col  className = "column">      
         <p> All right reserved © Web Name | 2022</p>
         <div id="icons">
         <img src={require("../images/fb-icon.png")}alt="" />
@@ -34,7 +34,7 @@ class FooterAfterLogin extends React.Component {
       </div>
       </Col>
 
-        <Col  class = "column"> <LogoutButton /></Col>
+        <Col  className = "column"> <LogoutButton /></Col>
       </Row>
     </Container>
    
