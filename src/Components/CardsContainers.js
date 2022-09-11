@@ -35,7 +35,7 @@ class CardsContainers extends React.Component {
       <div>
         {this.state.cards.length ? (
             <Container id="bodyCard">
-              <Row xs={1} md={3} lg={4} className="g-4">
+              <Row xs={1} sm={2} md={3} lg={4} className="g-4">
           
             {this.state.cards.map((item) => {
               return (
