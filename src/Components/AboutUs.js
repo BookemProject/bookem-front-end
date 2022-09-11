@@ -11,7 +11,6 @@ class AboutUs extends React.Component {
            <FirstSection />
            <SacendSection />
            <ThirdSection />
-           <FooterAfterLogin />
            </div>
         )
     }

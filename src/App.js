@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import { withAuth0 } from '@auth0/auth0-react';
-import HeaderAfterLogin from './Components/FooterAfterLogin';
+import HeaderAfterLogin from './Components/HeaderAfterLogin';
 import HomeAfterLogin from './Components/HomeAfterLogin';
 import AboutUsAfterLogin from './Components/AboutUsAfterLogin';
 import OurTeam from './Components/OurTeam';
