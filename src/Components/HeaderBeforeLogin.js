@@ -8,10 +8,12 @@ import '../Styles/Header.css';
 class HeaderBeforeLogin extends React.Component {
     render() {
       return (
-        <Navbar id="navigation" sticky="top">
+        <Navbar id="navigation" sticky="top" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand id="logo" href="#home">BOOKEM</Navbar.Brand>
-          <Nav className="ml-auto" id="items" >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto justify-content-end" id="items" style={{ width: "100%" }}>
             <Nav.Link id="navitems" href="#Home">Home</Nav.Link>
             <Nav.Link id="navitems" href="#AboutUs">About Us</Nav.Link>
             <Nav.Link id="navitems" href="#Services">Services</Nav.Link>
@@ -20,6 +22,7 @@ class HeaderBeforeLogin extends React.Component {
             <LoginButton />
             </div>
           </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
         )
