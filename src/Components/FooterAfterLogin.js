@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,7 +9,7 @@ import LogoutButton from './LogoutButton';
 import "../Styles/Footer.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class Header extends React.Component {
+class FooterAfterLogin extends React.Component {
   render() {
     return (
         <Container>
@@ -19,8 +20,8 @@ class Header extends React.Component {
         <Col>     
     <ListGroup>
       <ListGroup.Item><Link to="" >Home</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="" >About Us </Link></ListGroup.Item>
-      <ListGroup.Item><Link to="" >Our Team</Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/AboutUs" >About Us </Link></ListGroup.Item>
+      <ListGroup.Item><Link to="/OurTeam" >Our Team</Link></ListGroup.Item>
       <ListGroup.Item><Link to="" >Profile</Link></ListGroup.Item>
       <ListGroup.Item><Link to="" >My Collections</Link></ListGroup.Item>
     </ListGroup>
@@ -42,4 +43,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default FooterAfterLogin;
