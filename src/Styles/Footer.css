@@ -1,21 +1,29 @@
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    
-  }
-  #icons{
-    display: inline-block;
-    float: right;
-    position: relative;
-  top: 50px; left: 86px;
-  }
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+#icons{
+  display: inline-block;
+  justify-content: space-between;
+  position: relative;
+   
+}
+img{
+    padding: 5px;
+}
+p {
+  font-size: 15px;
+}

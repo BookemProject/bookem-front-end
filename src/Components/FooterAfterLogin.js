@@ -7,23 +7,25 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import LogoutButton from './LogoutButton';
 import "../Styles/Footer.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 class FooterAfterLogin extends React.Component {
   render() {
     return (
         <Container>
     <Row className="row:after">
-        <Col  className = "column">
-        <img src={require("../images/BOOKEM.webp")} alt="" />
-        </Col>
+    <Col  className = "column">
+          <Navbar.Brand id="logo"><Link style={{ textDecoration: 'none', color: 'black' }} to="/">BOOKEM</Link></Navbar.Brand>
+          </Col>
         <Col  className = "column">     
-    <ListGroup>
-      <ListGroup.Item><Link to="/" >Home</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/aboutUs" >About Us </Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/ourTeam" >Our Team</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/profile" >Profile</Link></ListGroup.Item>
-      <ListGroup.Item><Link to="/myCollections" >My Collections</Link></ListGroup.Item>
-    </ListGroup>
+    
+     
+        <Nav.Link ><Link   to="/">Home</Link></Nav.Link>
+            <Nav.Link ><Link   to="/aboutUs">About Us</Link></Nav.Link>
+            <Nav.Link ><Link  to="/ourTeam">Our Team</Link></Nav.Link>
+            <Nav.Link><Link  to="/profile">Profile</Link></Nav.Link>
+            <Nav.Link><Link  to="/myCollections">My Collections</Link></Nav.Link>
     </Col>
         <Col  className = "column">      
         <p> All right reserved © Web Name | 2022</p>
