@@ -1,10 +1,11 @@
 import React from 'react';
+import Filter from './Filter';
 
 class HomeAfterLogin extends React.Component {
     render() {
       return (
            <div>
-           Home After Login
+           <Filter />
            </div>
         )
     }
