@@ -33,6 +33,7 @@ class CardsContainers extends React.Component {
   render() {
     return (
       <div>
+        <br></br>
         {this.state.cards.length ? (
             <Container id="bodyCard">
               <Row xs={1} sm={2} md={3} lg={4} className="g-4">
@@ -47,7 +48,7 @@ class CardsContainers extends React.Component {
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
-                      <Button variant="outline-info" id="btn1" onClick={() => this.farm(item)}> More Detail </Button>
+                      <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}> More Detail </Button>
                       <Button variant="outline-danger" id="btn" onClick={""}  > ♥️ </Button>
                       {/* <FarmInformation 
                       itemData = {this.item}
