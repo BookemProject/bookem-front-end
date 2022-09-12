@@ -95,6 +95,7 @@ AddNewFarm = (e) =>{
         owner: user.email,
         available: true,
         favoriteEmails: [],
+        likes:[],
     }
 
     
@@ -130,6 +131,7 @@ AddNewFarm = (e) =>{
         farms : result.data,
        
       })
+      this.componentDidMount();
     })
     .catch(err=>{
       console.log(err);
@@ -156,9 +158,9 @@ AddNewFarm = (e) =>{
 render(){
   return (
     <div>
-    <div id = "mainDivsubmit">
+    <div id = "mainDivsubmit" className="container">
 <Card id ="myCardsubmit" style={{ width: 'auto' , height:"auto" }}>
-      <Card.Img id="CardImgsubmit" style={{ width: '450px' , height:"455px", }} variant="top" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+      <Card.Img className = "img-fluid"id="CardImgsubmit" style={{ width: '450px' , height:"455px", }} variant="top" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
       </Card>
      <div id="formDiv">
      
