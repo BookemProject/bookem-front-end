@@ -1,16 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+import Container from 'react-bootstrap/Container';
 import "../Styles/AboutUs.css";
 
 
 class FirstSection extends React.Component {
     render() {
       return (
-        <Container className="border">
+        <Container >
         <Row className="row:after">
         <Col sm={6} className="column">
       <h1> About Us </h1>
@@ -19,6 +20,7 @@ class FirstSection extends React.Component {
        <Card.Img variant="top" src={require("../images/logo.jpeg")} />
        </Col>
        </Row>
+        <Row>
          <p>Bookem is a website that gives the user ease of use to search for farms anywhere in jordan, and create a booking service in the website To facilitate communication with Home/Farm owners.</p>
         <h4> Aims and objectives</h4>
         <ul>
@@ -30,7 +32,9 @@ class FirstSection extends React.Component {
    <li>
      Everyone interested in traveling and trips</li>
      <li> Home/Farm owners. </li> </ul>
-         </Container>
+          </Row>
+          <Row> <span class="line" ></span></Row>
+           </Container>
         )
     }
   }
