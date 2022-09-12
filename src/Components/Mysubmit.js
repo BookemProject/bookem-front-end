@@ -97,12 +97,14 @@ AddNewFarm = (e) =>{
         favoriteEmails: [],
     }
 
+    
     axios
     .post(`http://localhost:3001/addFarm`, obj)
     .then(result =>{
       this.setState({
         farms:result.data
       })
+      
 
       console.log(result.data);
      
@@ -117,11 +119,11 @@ AddNewFarm = (e) =>{
 
   deleteFarm  = (id)=>{
 
-    const email ="basharnobeh2001@gmail.com"
-    
+    // const email ="basharnobeh2001@gmail.com"
+    const  user  = this.props.auth0
     console.log(id);
     axios
-    .delete(`http://localhost:3001/removeFarm/${id}?owner=${email}`) //http://localhost:3001/deleteBook?id=${id}
+    .delete(`http://localhost:3001/removeFarm/${id}?owner=${user.email}`) //http://localhost:3001/deleteBook?id=${id}
     .then(result =>{
       
       this.setState({
@@ -186,17 +188,17 @@ render(){
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom" htmlFor="Select">Select Menu</Form.Label>
           <Form.Select id="Select" name = "City">
-            <option value = "Amman" id="options"> Amman</option>
-            <option value = "Az Zarqa" id="options"> Az Zarqa</option>
-            <option value = "Irbid" id="options"> Irbid</option>
-            <option value = "Jerrash" id="options"> Jerrash</option>
-            <option value = "Al Tafela" id="options"> Al Tafela</option>
-            <option value = "Al Karak" id="options"> Al Karak</option>
-            <option value = "Ajloun" id="options"> Ajloun</option>
-            <option value = "Aqaba" id="options"> Aqaba</option>
-            <option value = "Maan" id="options"> Maan</option>
-            <option value = "Madaba" id="options"> Madaba</option>
-            <option value = "Al Mafraq" id="options"> Al Mafraq</option>
+            <option value = "Amman" id="options">Amman</option>
+            <option value = "Zarqa" id="options">Zarqa</option>
+            <option value = "Irbid" id="options">Irbid</option>
+            <option value = "Jerrash" id="options">Jerrash</option>
+            <option value = "Tafela" id="options">Tafela</option>
+            <option value = "Karak" id="options">Karak</option>
+            <option value = "Ajloun" id="options">Ajloun</option>
+            <option value = "Aqaba" id="options">Aqaba</option>
+            <option value = "Maan" id="options">Maan</option>
+            <option value = "Madaba" id="options">Madaba</option>
+            <option value = "Mafraq" id="options">Mafraq</option>
           </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3" name = "checklist">
