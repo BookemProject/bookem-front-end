@@ -9,6 +9,7 @@ import "../Styles/Cards.css";
 import Filter from './Filter';
 import { withAuth0 } from '@auth0/auth0-react';
 import swal from 'sweetalert';
+import '../Styles/Filter.css';
 // import FarmInformation from "./FarmInformation";
 
 class CardsContainers extends React.Component {
