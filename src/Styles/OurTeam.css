@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #392d2d;
+    background: #fef9f9;
     min-height: 100vh;
   
   }
@@ -38,7 +38,7 @@
     height: 400px;
     background: rgba(255, 255, 255, 0.05);
     margin: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0, 0.5);
+    box-shadow: 0 15px 20px rgba(0,0,0, 0.5);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 0.75;
+    opacity: 0.9;
     transition: 0.5s;
   }
   #container #card #content:hover{
@@ -66,11 +66,11 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid rgba(0,0,0, 0.25);
+    border: 5px solid rgba(0,0,0, 0.25);
   }
   
   #container #card #content #contentBx #name{
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -84,7 +84,7 @@
   }
   
   #container #card #content #contentBx #job{
-    color: #fff;
+    color:black;
     letter-spacing: 2px;
     font-size: 12px;
     font-weight: 300;

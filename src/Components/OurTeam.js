@@ -10,7 +10,7 @@ class OurTeam extends React.Component {
         return(
             
       <div id="body">
-      <div id="home-picture">our Team</div>
+      <div id="home-picture"></div>
       <div id = "section">
 
       <Container id="container">
@@ -42,8 +42,8 @@ class OurTeam extends React.Component {
                   src={require('../images/yazan.png')}
                 />
                 <Card.Body id="contentBx">
-                  <Card.Title>Yazan Alfarra</Card.Title>
-                  <Card.Text>Full Stack Web developer</Card.Text>
+                  <Card.Title id="name">Yazan Alfarra</Card.Title>
+                  <Card.Text id="job">Full Stack Web developer</Card.Text>
      
                 </Card.Body>
               </div>
@@ -58,8 +58,8 @@ class OurTeam extends React.Component {
                   src={require('../images/bashar.jpg')}
                 />
                 <Card.Body id="contentBx">
-                  <Card.Title>Bashar Nobeh</Card.Title>
-                  <Card.Text>Full Stack Web developer</Card.Text>
+                  <Card.Title id="name">Bashar Nobeh</Card.Title>
+                  <Card.Text id="job">Full Stack Web developer</Card.Text>
                 </Card.Body>
               </div>
             </Card>
@@ -73,8 +73,8 @@ class OurTeam extends React.Component {
                   src={require('../images/ihab.jpg')}
                 />
                 <Card.Body id="contentBx">
-                  <Card.Title>Ihab Abbas</Card.Title>
-                  <Card.Text>Full Stack Web developer</Card.Text>
+                  <Card.Title id="name">Ihab Abbas</Card.Title>
+                  <Card.Text id="job">Full Stack Web developer</Card.Text>
                 </Card.Body>
               </div>
             </Card>
@@ -88,8 +88,8 @@ class OurTeam extends React.Component {
                   src={require('../images/ibraheem.jpg')}
                 />
                 <Card.Body id="contentBx">
-                  <Card.Title>Ibrahim Almanaseer</Card.Title>
-                  <Card.Text>Full Stack Web developer</Card.Text>
+                  <Card.Title id="name">Ibrahim Almanaseer</Card.Title>
+                  <Card.Text id="job">Full Stack Web developer</Card.Text>
                 </Card.Body>
               </div>
             </Card>
@@ -103,8 +103,8 @@ class OurTeam extends React.Component {
                   src=""
                 />
                 <Card.Body id="contentBx">
-                  <Card.Title>Morshed qatoseh</Card.Title>
-                  <Card.Text>Full Stack Web developer</Card.Text>
+                  <Card.Title id="name">Morshed qatoseh</Card.Title>
+                  <Card.Text id="job">Full Stack Web developer</Card.Text>
                 </Card.Body>
               </div>
             </Card>
