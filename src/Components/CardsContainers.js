@@ -90,15 +90,14 @@ class CardsContainers extends React.Component {
       favoriteEmails:[],
       likes:item.likes,
       }
-      console.log(item);
       axios
       .put(`http://localhost:3001/updateLikes/${item._id}`,obj)
       .then(
         swal({
           title: "succeed ! ",
-          text: `${item.farmName} has been addded to your favorites`,
+          text: `${item.farmName} has been added to your favorites`,
           icon: "success",
-          button: "Continue",
+          button: "OK!",
         })
       )
     
@@ -128,16 +127,14 @@ class CardsContainers extends React.Component {
                         if(item.likes.includes(user.email)){
                           swal({
                                 title: " Farm Already Added ",
-                                text: `${item.farmName} is already addded to your favorites`,
+                                text: `${item.farmName} is already added to your favorites`,
                                 icon: "error",
-                                button: "Continue",
+                                button: "OK!",
                             })
                         } else {
                         item.likes.push(user.email);
                         this.updatelikes(item)}
-
-                        }
-                        }>
+                        }}>
                         ♥️</Button>
                     </Card.Body>
                   </Card>

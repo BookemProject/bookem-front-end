@@ -1,1 +1,12 @@
-    
+#card-header{
+    background: rgb(37,35,35);
+    background: linear-gradient(45deg, rgba(37,35,35,1) 0%, rgba(50,50,52,1) 45%, rgba(151,155,156,1) 94%);   
+}
+
+#userDetails {
+    text-align: left;
+}
+
+#userImage {
+    border-radius: 100%;
+}
