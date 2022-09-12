@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "../Styles/AboutUs.css";
+import Card from 'react-bootstrap/Card';
 
 class ThirdSection extends React.Component {
     render() {

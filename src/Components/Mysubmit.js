@@ -117,11 +117,11 @@ AddNewFarm = (e) =>{
 
   deleteFarm  = (id)=>{
 
-    const email ="basharnobeh2001@gmail.com"
+    const { user } = this.props.auth0
     
     console.log(id);
     axios
-    .delete(`http://localhost:3001/removeFarm/${id}?owner=${email}`) //http://localhost:3001/deleteBook?id=${id}
+    .delete(`http://localhost:3001/removeFarm/${id}?owner=${user.email}`) //http://localhost:3001/deleteBook?id=${id}
     .then(result =>{
       
       this.setState({
