@@ -22,6 +22,18 @@ import FarmInformation from './Components/FarmInformation';
 
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      cards:[],
+    }
+  }
+
+  passItem = (item) => {
+      this.setState({
+        cards:item,
+      })
+  }
   
     render() {
       const { isAuthenticated } = this.props.auth0;
@@ -34,7 +46,7 @@ class App extends React.Component {
             <Routes>
               <Route 
                 exact path="/"
-                element={<HomeAfterLogin />}
+                element={<HomeAfterLogin passItem={this.passItem}/>}
               >
               </Route>
               <Route 
@@ -61,7 +73,7 @@ class App extends React.Component {
 
                 <Route 
                 exact path="/farminfo"
-                element={<FarmInformation />}
+                element={<FarmInformation cards={this.state.cards} />}
               >
 
                 </Route>

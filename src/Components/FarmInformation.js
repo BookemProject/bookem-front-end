@@ -24,11 +24,41 @@ class FarmInformation extends React.Component{
         weatherTempeature:'',
         price:'10',
         show:false,
+        cards:this.props.cards,
 
 
         };
     
     }
+/*
+farmName: item.farmName,
+imgURL: item.imgURL,
+location: item.location,
+price: item.price,
+description: item.description,
+wifi: item.wifi,
+pool: item.pool,
+parking: item.parking,
+bedrooms: item.bedrooms,
+owner: item.owner,
+available: null,
+favoriteEmails:[],
+likes:item.likes,
+*/
+
+// To get the farm name ==== this.state.cards.farmName --- string
+// To get the img URL ==== this.state.cards.imgURL --- string
+// To get the Location Name (city name) ==== this.state.cards.location --- string
+// To get the price ==== this.state.cards.price --- Number
+// To get the description ==== this.state.cards.description --- string
+// To get the wifi ==== this.state.cards.wifi --- Boolean
+// To get the pool ==== this.state.cards.pool --- Boolean
+// To get the parking ==== this.state.cards.parking --- Boolean
+// To get the bedrooms ==== this.state.cards.bedrooms --- Number
+// To get the owner ==== this.state.cards.owner --- string
+
+
+
 
 // get lan and lon from location API  
 componentDidMount=()=>{

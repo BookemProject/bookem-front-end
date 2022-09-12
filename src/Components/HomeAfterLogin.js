@@ -6,7 +6,7 @@ class HomeAfterLogin extends React.Component {
     render() {
       return (
            <div>
-           <CardsContainers />
+           <CardsContainers passItem={this.props.passItem}/>
            </div>
         )
     }
