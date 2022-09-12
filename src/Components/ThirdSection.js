@@ -10,7 +10,7 @@ import "../Styles/AboutUs.css";
 class ThirdSection extends React.Component {
     render() {
       return (
-        <Container className="border">
+        <Container >
      
         <Row className="row:after">
          
