@@ -4,7 +4,7 @@ class MyCollections extends React.Component {
     render() {
       return (
            <div>
-           My Collections
+           
            </div>
         )
     }
