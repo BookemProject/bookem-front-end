@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    align-content: center;
+
   }
   
   #body{
@@ -9,11 +12,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #fef9f9;
     min-height: 100vh;
-  
   }
-  
   
   
   #container{
@@ -81,6 +81,9 @@
   }
   #container #card #content #contentBx:hover{
     transform: translateY(-10px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
   #container #card #content #contentBx #job{
@@ -88,4 +91,12 @@
     letter-spacing: 2px;
     font-size: 12px;
     font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
+
+ #section{
+  display: flex;
+  justify-content: center;
+ }

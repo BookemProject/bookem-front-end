@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Card from 'react-bootstrap/Card';
-import './Figure.css'
+import '../Styles/Figure.css'
 
 
 

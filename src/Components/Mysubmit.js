@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import '../Styles/Mysubmit.css';
+import '../Styles/Mysubmit.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
@@ -18,27 +18,28 @@ Wifi : false,
 Pool : false,
 Parking : false,
 farms:[],
+currentFarm : "",
 
 
 
   }
 }
-
 componentDidMount = async () =>{
-    try {
-        const  user  = "basharnobeh2001@gmail.com" // user Email
-       const data = await  axios.get(`http://localhost:3001/OwnedFarms?email=${user}`)
-             console.log("this is the result mate ",data.data)
-             this.setState({
-              farms:data.data 
-             })
-             console.log("owned farms " , this.state.farms)
-    }catch {
-  console.log("error")
-  
-    }
-  
+  try {
+      const  user  = "basharnobeh2001@gmail.com" // user Email          
+     const data =  await axios.get(`http://localhost:3001/OwnedFarms?email=${user}`)     
+
+           console.log("this is the result mate ",data.data)
+           this.setState({
+            farms:data.data
+           })            
+           console.log("owned farms " , this.state.farms.data)
+  }catch {
+console.log("error")
+
   }
+  
+}
 
 handleChangeWifi = (e) => {
  if(this.state.Wifi === true){
@@ -113,6 +114,31 @@ AddNewFarm = (e) =>{
 
   }
 
+  deleteFarm  = (id)=>{
+
+    const email ="basharnobeh2001@gmail.com"
+    
+    console.log(id);
+    axios
+    .delete(`http://localhost:3001/removeFarm/${id}?owner=${email}`) //http://localhost:3001/deleteBook?id=${id}
+    .then(result =>{
+      
+      this.setState({
+        farms : result.data,
+       
+      })
+    })
+    .catch(err=>{
+      console.log(err);
+    })
+    
+    
+    
+    
+    }
+
+    
+
   
 
 
@@ -159,18 +185,17 @@ render(){
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom" htmlFor="Select">Select Menu</Form.Label>
           <Form.Select id="Select" name = "City">
-            <option value = "Ajloun" id="options">Ajloun</option>
-            <option value = "Amman" id="options">Amman</option>
-            <option value = "Aqaba" id="options">Aqaba</option>
-            <option value = "Balqa" id="options">Balqa</option>
-            <option value = "Irbid" id="options">Irbid</option>
-            <option value = "Jerash" id="options">Jerash</option>
-            <option value = "Karak" id="options">Karak</option>
-            <option value = "Ma'an" id="options">Ma'an</option>
-            <option value = "Madaba" id="options">Madaba</option>
-            <option value = "Mafraq" id="options">Mafraq</option>
-            <option value = "Tafilah" id="options">Tafilah</option>
-            <option value = "Zarqa" id="options">Zarqa</option>
+            <option value = "Amman" id="options"> Amman</option>
+            <option value = "Az Zarqa" id="options"> Az Zarqa</option>
+            <option value = "Irbid" id="options"> Irbid</option>
+            <option value = "Jerrash" id="options"> Jerrash</option>
+            <option value = "Al Tafela" id="options"> Al Tafela</option>
+            <option value = "Al Karak" id="options"> Al Karak</option>
+            <option value = "Ajloun" id="options"> Ajloun</option>
+            <option value = "Aqaba" id="options"> Aqaba</option>
+            <option value = "Maan" id="options"> Maan</option>
+            <option value = "Madaba" id="options"> Madaba</option>
+            <option value = "Al Mafraq" id="options"> Al Mafraq</option>
           </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3" name = "checklist">
@@ -200,7 +225,8 @@ render(){
         </Form.Group>
         
       </fieldset>
-      <Button id = "myButton" type="submit" >Submit</Button>
+     
+      <Button variant="outline-secondary" id = "myButton" type="submit">Submit  </Button>
     </Form>
 
 
@@ -211,7 +237,7 @@ render(){
     
     </div>
 
-    <OwnedFarms userFarms = {this.state.farms}/>
+    <OwnedFarms userFarms = {this.state.farms} deleteFarm = {this.deleteFarm} updateFarm = {this.updateFarm} mount = {this.componentDidMount}/>
 
     </div>
 
