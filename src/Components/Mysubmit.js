@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import OwnedFarms from './OwnedFarms';
+import { withAuth0 } from '@auth0/auth0-react';
 
 
 
@@ -26,8 +27,8 @@ currentFarm : "",
 }
 componentDidMount = async () =>{
   try {
-      const  user  = "basharnobeh2001@gmail.com" // user Email          
-     const data =  await axios.get(`http://localhost:3001/OwnedFarms?email=${user}`)     
+    const { user } = this.props.auth0;         
+     const data =  await axios.get(`http://localhost:3001/OwnedFarms?email=${user.email}`)     
 
            console.log("this is the result mate ",data.data)
            this.setState({
@@ -80,7 +81,7 @@ handleChangeWifi = (e) => {
 
 AddNewFarm = (e) =>{
     e.preventDefault();
-    // const { user } = this.props.auth0
+    const { user } = this.props.auth0
     const obj = {
         farmName: e.target.farmName.value,
         imgURL: e.target.imgURL.value,
@@ -91,7 +92,7 @@ AddNewFarm = (e) =>{
         pool: this.state.Pool,
         parking: this.state.Parking,
         bedrooms: e.target.bedrooms.value,
-        owner: "basharnobeh2001@gmail.com",
+        owner: user.email,
         available: true,
         favoriteEmails: [],
     }
@@ -254,4 +255,4 @@ render(){
 
 
 
-export default Mysubmit;
+export default withAuth0(Mysubmit);

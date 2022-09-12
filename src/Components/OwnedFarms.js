@@ -9,6 +9,7 @@ import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
+import { withAuth0 } from '@auth0/auth0-react';
 
 
 
@@ -94,7 +95,8 @@ handleModal = (farm)=>{
 
 updateFarm = (e) =>{
   e.preventDefault();
-  const  user  = "basharnobeh2001@gmail.com" // user Email
+  const { user } = this.props.auth0;
+  // const  user  = "basharnobeh2001@gmail.com" // user Email
 
 
 
@@ -122,7 +124,7 @@ updateFarm = (e) =>{
   pool: Pool,
   parking: Parking,
   bedrooms: e.target.bedrooms.value,
-  owner: user,
+  owner: user.email,
   available: null,
   favoriteEmails:[],
   
@@ -333,4 +335,4 @@ render(){
 
 
 
-export default OwnedFarms;
+export default withAuth0(OwnedFarms);
