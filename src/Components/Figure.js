@@ -20,7 +20,7 @@ render(){
   return (
 
 <div id="mainDiv">
-<Card id ="myCard" style={{ width: 'auto' , height:"auto" }}>
+<Card id ="myCard" style={{ width: '1420px' , height:"600px"  }}>
       <Card.Img id="CardImg" style={{ width: '400px' , height:"auto", }} variant="top" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
       <Card.Body>
         <Card.Title id = "CardTitle"> <strong>About Bookem</strong> </Card.Title>

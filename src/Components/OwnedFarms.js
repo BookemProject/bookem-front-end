@@ -10,6 +10,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
+import swal from 'sweetalert';
+
 
 
 
@@ -142,9 +144,17 @@ updateFarm = (e) =>{
   
     
   })
+
+
   
   this.handleClose();
   this.props.mount();
+  swal({
+    title: "Updated ! ",
+    buttonColor: '#212529',
+    icon: "success",
+    button: "Continue",
+  });
   
   
   
@@ -229,7 +239,7 @@ render(){
                   
                   <Modal show={this.state.show} onHide={this.handleClose}>
         
-        <Modal.Body id ="ModalBody" style = {{width:"auto"}}>
+        <Modal.Body id ="ModalBody" style = {{width:"fit-content" }}>
 
 
 
