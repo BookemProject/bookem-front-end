@@ -101,9 +101,6 @@ class CardsContainers extends React.Component {
           button: "OK!",
         })
       )
-    
-
-      
   }
   
   render() {

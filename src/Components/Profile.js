@@ -5,6 +5,7 @@ import '../Styles/Profile.css';
 import axios from "axios";
 import swal from 'sweetalert';
 import Button from "react-bootstrap/Button";
+import "../Styles/Cards.css";
 
 
 class Profile extends React.Component {
@@ -45,7 +46,6 @@ class Profile extends React.Component {
         this.setState({
           cards: result.data,
         });
-        console.log("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
       })
       .catch((err) => {
         console.log(err);

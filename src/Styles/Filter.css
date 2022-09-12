@@ -3,4 +3,6 @@
     z-index: 1;
     background-color: white;
     padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
