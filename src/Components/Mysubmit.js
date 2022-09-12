@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import OwnedFarms from './OwnedFarms';
 import { withAuth0 } from '@auth0/auth0-react';
+import swal from 'sweetalert';
 
 
 
@@ -99,6 +100,7 @@ AddNewFarm = (e) =>{
     }
 
     
+    
     axios
     .post(`http://localhost:3001/addFarm`, obj)
     .then(result =>{
@@ -106,7 +108,12 @@ AddNewFarm = (e) =>{
         farms:result.data
       })
       
-
+      swal({
+        title: "succeed ! ",
+        text: "A New Farm Has Been Added To Your Collection",
+        icon: "success",
+        button: "Continue",
+      });
       console.log(result.data);
      
     })
@@ -132,6 +139,12 @@ AddNewFarm = (e) =>{
        
       })
       this.componentDidMount();
+      swal({
+        title: "succeed ! ",
+        text: "The Farm Was Deleted successfully",
+        icon: "success",
+        button: "Continue",
+      });
     })
     .catch(err=>{
       console.log(err);
