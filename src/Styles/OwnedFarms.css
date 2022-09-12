@@ -85,7 +85,9 @@
 
 #ModalBody{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding:10px;
+  padding:50px;
+  padding-left: 80px;
+  padding-right: 80px;
   
 }
 
@@ -113,7 +115,7 @@ column-gap:15px;
 }
 
 #FormBox{
-  width: 100%;
+  width: 250px;
   padding: 12px 10px;
   margin: 0px 0;
   display: inline-block;
@@ -137,12 +139,14 @@ column-gap:15px;
   height: 15vw;
   object-fit: cover;
   border-radius: 20px;
+  
 }
 
 #cardImg:hover {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 
@@ -160,8 +164,4 @@ column-gap:15px;
 
 #card #info #btn1:hover{
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-#card:hover {
-  transform: translateY(20px);
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
@@ -15,9 +15,30 @@ class CardsContainers extends React.Component {
     this.state = {
       cards: [],
       location: "",
+      color:'white',
+      
+      textcolor:"white"
     };
+    this.ChangeColor = this.ChangeColor.bind(this);
   }
-  
+
+
+  ChangeColor(){
+    if(this.state.Buttontext === '♥️'){
+      this.setState({
+        color:'red',
+        Buttontext:"Unlike",
+        textcolor:"black",
+      })
+    }else {
+      this.setState({
+        color:'white',
+        Buttontext:"♥️",
+        textcolor:"white",
+      })
+    }
+    
+  }
   componentDidMount = () => {
     axios
       .get(`http://localhost:3001/`)
@@ -42,6 +63,7 @@ class CardsContainers extends React.Component {
         this.setState({
           cards: result.data,
           location: eventKey,
+         
         });
       })
       .catch((err) => {
@@ -49,6 +71,8 @@ class CardsContainers extends React.Component {
       });
     }
   }
+  
+
 
   render() {
     return (
@@ -67,7 +91,7 @@ class CardsContainers extends React.Component {
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
-                      <Button variant="outline-danger" id="btn" onClick={""}> ♥️ </Button>
+                      <Button variant="outline-danger" id="btn" style={{ }} onClick={this.ChangeColor}>♥️</Button>
                     </Card.Body>
                   </Card>
                 </div>
