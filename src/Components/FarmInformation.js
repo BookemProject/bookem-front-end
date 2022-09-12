@@ -1,11 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from "react-bootstrap/Form";
 import React from "react";
 import axios from "axios";
 import FarmMap from "./FarmMap";
+import Payment from "./Payment";
 import FarmWeather from "./FarmWeather";
-const URL_LOCATIONIQ='https://eu1.locationiq.com/v1/search';
-const LOCATION_KEY='pk.e6f569abb6089f922ac76a14ac4bc5e4';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/Farminformation.css';
 
 
 class FarmInformation extends React.Component{
@@ -15,29 +14,31 @@ class FarmInformation extends React.Component{
         super(props)
 
         this.state={
-        // get citynmae from farmcard
-        city:'Amman',
+       
+        city:'amman',
         longitude:'',
         latitude:'',
-        weather:'',
         startdate:'',
-        enddate:''
-        
+        enddate:'',
+        weathercondition:'',
+        weatherTempeature:'',
+        price:'10',
+        show:false,
 
 
         };
     
     }
 
-    // get lan and lon from location API  
+// get lan and lon from location API  
 componentDidMount=()=>{
         
-    axios.get(`${URL_LOCATIONIQ}?key=${LOCATION_KEY}&q=${this.state.city}&format=json`).then(res=>{
-        const locationData=res.data[0];
-       
+    axios.get(`http://localhost:3001/map?city=${this.state.city}`).then(res=>{
+        
+        
         this.setState({
-            longitude:locationData.lon,
-            latitude:locationData.lat
+            longitude:res.data.lon,
+            latitude:res.data.lat
         })
         
     })
@@ -45,33 +46,68 @@ componentDidMount=()=>{
 
 }
 
+// update check-in date state  
 handleStartDate=async(e)=>{
-
-    await this.setState({
-        startdate:e.target.value
-       
-    })
-    
-}
-
-handleEndDate=(e)=>{
-
+    const startdate=e.target.value;
     this.setState({
-        enddate:e.target.value
+        startdate:startdate
        
     })
+    axios.get(`http://localhost:3001/weather?city=${this.state.city}&date=${e.target.value}`)
+    .then(result=>{
+    
+       const weatherCondtion=result.data.condition.text;
+       const weatherTempeature=result.data.maxtemp_c+' C';
+       console.log(weatherCondtion)
+       this.setState({
+       weathercondition:weatherCondtion,
+       weatherTempeature:weatherTempeature,
+       })
+          
+       
+    })
+    .catch(err=> {
+      console.log(err)
+    })
+
+   
+    
+}
+// update checkout date state  
+handleEndDate=(e)=>{
+  
+  
+   let  daysAmount= e.target.value.slice(e.target.value.length -2) - this.state.startdate.slice(this.state.startdate.length -2) ;
+   let totalCost=this.state.price*daysAmount
+   this.setState({
+
+    price:totalCost
+
+   })
 }
     
-
+// close payment modal
+handleClose=()=>{
+    this.setState({
+  
+      show:false
+    })
+  }
  
+// open payment modal
+handleOpen=(e)=>{
+
+    e.preventDefault();
+    this.setState({
+  
+      show:true
+    })
+  }
 
 render(){
 
 return (
 <>
-
-<section className= 'farmoverview'>
-
   {/* <h2> Farmname: {this.props.farm.farmName}</h2>
   <img src={this.props.farm.imgURL} >  </img>
   <ul>
@@ -85,36 +121,86 @@ return (
   <li>available: {this.props.farm.owner}</li>
    </ul>    
   <p>{this.props.farm.description} </p> */}
-     
+ {/* <h1></h1>
+ <img className='farm' alt='farm' src="https://upload.wikimedia.org/wikipedia/commons/d/df/Town_and_Country_fh000023.jpg" />
+ <p></p> */}
+
+<section className= 'farmoverview'>  
+ <div id="about">
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xs-12 col-md-6 about-img"></div>
+      <div className="col-xs-12 col-md-3 col-md-offset-1">
+        <div className="about-text">
+          <div className="section-title">
+            <h2 className="h2">Green Garden</h2>
+          </div>
+          <p>luxury facility that is intended primarily for vacationers and is usually located near special attractions, such as beaches and seashores, scenic or historic areas, ski parks, or spas.</p>
+          <br></br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
+<div className='farminfo'>
 
-<section className='farmlocation'>
-<FarmMap  latitude={this.state.latitude} longitude={this.state.longitude}/>
-</section>
-<section className='checkinandcheckout'>
-
-<Form onChange={this.handleStartDate}>
-    <Form.Label>From:</Form.Label>
-    <Form.Control style={{width:200  }} type="date"  name='startdate'></Form.Control>
-    </Form>  
-    
-
-<Form onChange={this.handleEndDate}>
-    <Form.Label>To:</Form.Label>
-    <Form.Control style={{width:200  }} type="date"  name='enddate'></Form.Control>
-    </Form>  
-
-</section>
+    <div className="map">
+     <FarmMap  latitude={this.state.latitude} longitude={this.state.longitude}  />
+    </div>  
+</div>
 
 
-<section className='farmweather'>
-<FarmWeather cityname={this.state.city} startdate={this.state.startdate} enddate={this.state.enddate}/>
-</section>
+<div id="booking" className="section">
+		<div className="section-center">
+			<div className="container">
+				<div className="row">
+					<div className="col-md-7 col-md-push-5">
+						<div className="booking-cta">
+
+              <FarmWeather city={this.state.city} weathercondition={this.state.weathercondition} weatherTempeature={this.state.weatherTempeature} startdate={this.state.startdate} />
+							
+						</div>
+					</div>
+					<div className="col-md-4 col-md-pull-7">
+						<div className="booking-form">
+							<form>
+								<div className="form-group">
+									<span className="form-label">BOOK NOW</span>
+									
+								</div>
+								<div className="row">
+									<div className="col-sm-6">
+										<div className="form-group">
+											<span className="form-label">Check In</span>
+											<input className="form-control" type="date" required="" onChange={this.handleStartDate} />
+										</div>
+									</div>
+									<div className="col-sm-6">
+										<div className="form-group">
+											<span className="form-label">Check out</span>
+											<input className="form-control" type="date" required="" onChange={this.handleEndDate}/>
+										</div>
+									</div>
+								</div>
+								
+								<div className="form-btn">
+									<button className="submit-btn" onClick={this.handleOpen} >Check</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
+<Payment show={this.state.show} price={this.state.price} handleClose={this.handleClose} />
 </>
 )}}
+
 
 
 export default FarmInformation;

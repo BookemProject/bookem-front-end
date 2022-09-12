@@ -18,6 +18,7 @@ import HomeBeforeLogin from './Components/HomeBeforeLogin';
 // import Services from './Components/Services';
 // import Testimonials from './Components/Testimonials';
 import FooterBeforeLogin from './Components/FooterBeforeLogin';
+import FarmInformation from './Components/FarmInformation';
 
 
 class App extends React.Component {
@@ -55,7 +56,16 @@ class App extends React.Component {
                 exact path="/myCollections"
                 element={<MyCollections />}
               >
-              </Route>
+
+                </Route>
+
+                <Route 
+                exact path="/farminfo"
+                element={<FarmInformation />}
+              >
+
+                </Route>
+
               
             </Routes>
             {<FooterAfterLogin/>}
