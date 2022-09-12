@@ -127,6 +127,7 @@ updateFarm = (e) =>{
   owner: user.email,
   available: null,
   favoriteEmails:[],
+  likes:[],
   
   }
   
@@ -232,7 +233,7 @@ render(){
 
 
 
-        <Form id ="CardForm2" onSubmit={this.updateFarm}>
+        <Form id ="CardForm2"  onSubmit={this.updateFarm}>
       <fieldset id = "GridItems2">
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom2"htmlFor="TextInput">Farm Name</Form.Label>
@@ -305,7 +306,7 @@ render(){
       <Button variant="outline-secondary" id="btnUpdate"  type="submit" >Click to Update !</Button>
     </Form>
    
-      <Button variant="outline-secondary" id="btndelete" class="btn btn-danger"  onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
+      <Button variant="outline-secondary" id="btndelete"   onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
 
 
 
