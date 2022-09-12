@@ -14,6 +14,14 @@
 
     
   }
+  .modal-dialog{
+    justify-content: center;
+    align-items: center;
+  }
+
+  #FormBox{
+    width: 100%;
+  }
   #options{
     font-family: 'Roboto Condensed', sans-serif;
   }
