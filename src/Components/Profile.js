@@ -45,15 +45,49 @@ class Profile extends React.Component {
         this.setState({
           cards: result.data,
         });
+        console.log("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
       })
       .catch((err) => {
         console.log(err);
       });
   }
 
+  removeFromFav = (item) => {
+    const { user } = this.props.auth0;
+    const index = item.likes.indexOf(user.email);
+    if (index > -1) { 
+      item.likes.splice(index, 1); 
+    }
+    let obj = {
+      farmName: item.farmName,
+      imgURL: item.imgURL,
+      location: item.location,
+      price: item.price,
+      description: item.description,
+      wifi: item.wifi,
+      pool: item.pool,
+      parking: item.parking,
+      bedrooms: item.bedrooms,
+      owner: item.owner,
+      available: null,
+      favoriteEmails:[],
+      likes:item.likes,
+      }
+      axios
+      .put(`http://localhost:3001/removefav/${item._id}`,obj)
+      .then(
+        swal({
+          title: "succeed ! ",
+          text: `${item.farmName} has been removed from your favorites`,
+          icon: "success",
+          button: "OK!",
+        }),
+        this.componentDidMount()
+      )
+  }
+
   render() {
     const { user } = this.props.auth0;
-    console.log(user);
     return (
       <>
       <>
@@ -110,13 +144,7 @@ class Profile extends React.Component {
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
-                      <Button variant="outline-danger" id="btn" onClick={() => {
-                        const index = item.likes.indexOf(user.email);
-                        if (index > -1) { 
-                          item.likes.splice(index, 1);
-                      }
-                      this.componentDidMount();
-                      }}>
+                      <Button variant="outline-danger" id="btn" onClick={() => {this.removeFromFav(item)}}>
                         Remove</Button>
                     </Card.Body>
                   </Card>
