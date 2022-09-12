@@ -12,7 +12,7 @@ class OurTeam extends React.Component {
       <div id="body">
         <Container id="containerc">
           <Figure>
-            <div>
+            <div id="pic">
               <Figure.Image
                 id="imageBxc"
                 src={require("../images/pic2.png")}
@@ -32,7 +32,7 @@ class OurTeam extends React.Component {
         </Container>
         <div id="section">
           <Container id="container">
-            <Row xs={1} sm={2} md={3} lg={3}>
+            <Row xs={1} sm={1} md={2} lg={3}>
               <Col>
                 <Card style={{ width: "18rem" }} id="card">
                   <div id="content">
@@ -103,17 +103,6 @@ class OurTeam extends React.Component {
                     />
                     <Card.Body id="contentBx">
                       <Card.Title id="name">Ibrahim Almanaseer</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
-                    </Card.Body>
-                  </div>
-                </Card>
-              </Col>
-              <Col>
-                <Card style={{ width: "18rem" }} id="card">
-                  <div id="content">
-                    <Card.Img variant="top" id="imageBx" src="" />
-                    <Card.Body id="contentBx">
-                      <Card.Title id="name">Morshed qatoseh</Card.Title>
                       <Card.Text id="job">Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
