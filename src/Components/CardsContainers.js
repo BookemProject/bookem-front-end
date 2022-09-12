@@ -6,16 +6,18 @@ import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../Styles/Cards.css";
-import FarmInformation from "./FarmInformation";
+import Filter from './Filter';
+// import FarmInformation from "./FarmInformation";
 
 class CardsContainers extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       cards: [],
+      location: "",
     };
   }
-
+  
   componentDidMount = () => {
     axios
       .get(`http://localhost:3001/`)
@@ -25,34 +27,47 @@ class CardsContainers extends React.Component {
         });
       })
       .catch((err) => {
+        
         console.log(err);
       });
-  };
+  }
 
+  handleSelect = (eventKey) => {
+    if(eventKey === "All"){
+      this.componentDidMount();
+    } else {
+      axios
+      .get(`http://localhost:3001/filterFarm?location=${eventKey}`)
+      .then((result) => {
+        this.setState({
+          cards: result.data,
+          location: eventKey,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
+  }
 
   render() {
     return (
       <div>
-        <br></br>
+      <Filter handleSelect={this.handleSelect}/>
         {this.state.cards.length ? (
             <Container id="bodyCard">
-              <Row xs={1} sm={2} md={3} lg={4} className="g-4">
-          
+              <Row xs={1} sm={2} md={3} lg={4} >
             {this.state.cards.map((item) => {
               return (
                 <Col>
                 <div id="wrapper">
-                  <Card style={{ width: "18rem",  }} id="card" key={item}>
+                  <Card style={{ width: "18rem" }} id="card" key={item._id}>
                     <Card.Img variant="top" src={item.imgURL} id="cardImg"  />
-                    <Card.Body id="info" style={{ margin: "-10px 0px",  }}>
+                    <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
-                      {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
-                      <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}> More Detail </Button>
-                      <Button variant="outline-danger" id="btn" onClick={""}  > ♥️ </Button>
-                      {/* <FarmInformation 
-                      itemData = {this.item}
-                      /> */}
+                      <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
+                      <Button variant="outline-danger" id="btn" onClick={""}> ♥️ </Button>
                     </Card.Body>
                   </Card>
                 </div>
@@ -61,17 +76,14 @@ class CardsContainers extends React.Component {
             })}
             </Row>
             </Container>
-          
         ) : (
           <div>
-            <h3>No Farms Found 🏚️ </h3>
-            <h3>Try again </h3>
+            <h3>No Farms Found At The Desired Location 🏚️</h3>
           </div>
         )}
       </div>
     );
   }
 }
-
 
 export default CardsContainers;

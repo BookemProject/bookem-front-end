@@ -3,45 +3,48 @@ import Nav from 'react-bootstrap/Nav';
 import '../Styles/Filter.css';
 
 class Filter extends React.Component {
-  
+
     render() {
       return (
-        <Nav justify variant="tabs" id="filter-tabs">
+        <Nav justify variant="tabs" id="filter-tabs" onSelect={(eventKey) => this.props.handleSelect(eventKey)} defaultActiveKey="All">
         <Nav.Item>
-          <Nav.Link  style={{ textDecoration: 'none', color: 'black' }} eventKey="link-1">Ajloun</Nav.Link>
+          <Nav.Link  style={{ textDecoration: 'none', color: 'black' }} eventKey="All">All</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-2">Amman</Nav.Link>
+          <Nav.Link  style={{ textDecoration: 'none', color: 'black' }} eventKey="Ajloun">Ajloun</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-3">Aqaba</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Amman">Amman</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-4">Balqa</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Aqaba">Aqaba</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-5">Irbid</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Balqa">Balqa</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-6">Jerash</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Irbid">Irbid</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-7">Karak</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Jerash">Jerash</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-8">Ma'an</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Karak">Karak</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-9">Madaba</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Ma'an">Ma'an</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-10">Mafraq</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Madaba">Madaba</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-11">Tafilah</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Mafraq">Mafraq</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="link-12">Zarqa</Nav.Link>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Tafilah">Tafilah</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link style={{ textDecoration: 'none', color: 'black' }} eventKey="Zarqa">Zarqa</Nav.Link>
         </Nav.Item>
       </Nav>
         )
