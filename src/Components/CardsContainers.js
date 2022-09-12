@@ -7,6 +7,8 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../Styles/Cards.css";
 import Filter from './Filter';
+import { withAuth0 } from '@auth0/auth0-react';
+import swal from 'sweetalert';
 // import FarmInformation from "./FarmInformation";
 
 class CardsContainers extends React.Component {
@@ -21,7 +23,6 @@ class CardsContainers extends React.Component {
     };
     this.ChangeColor = this.ChangeColor.bind(this);
   }
-
 
   ChangeColor(){
     if(this.state.Buttontext === '♥️'){
@@ -39,6 +40,7 @@ class CardsContainers extends React.Component {
     }
     
   }
+
   componentDidMount = () => {
     axios
       .get(`http://localhost:3001/`)
@@ -63,18 +65,49 @@ class CardsContainers extends React.Component {
         this.setState({
           cards: result.data,
           location: eventKey,
-         
         });
+        console.log(this.state.cards)
       })
       .catch((err) => {
         console.log(err);
       });
     }
   }
+
+  updatelikes = (item) => {
+    let obj = {
+      farmName: item.farmName,
+      imgURL: item.imgURL,
+      location: item.location,
+      price: item.price,
+      description: item.description,
+      wifi: item.wifi,
+      pool: item.pool,
+      parking: item.parking,
+      bedrooms: item.bedrooms,
+      owner: item.owner,
+      available: null,
+      favoriteEmails:[],
+      likes:item.likes,
+      }
+      console.log(item);
+      axios
+      .put(`http://localhost:3001/updateLikes/${item._id}`,obj)
+      .then(
+        swal({
+          title: "succeed ! ",
+          text: `${item.farmName} has been addded to your favorites`,
+          icon: "success",
+          button: "Continue",
+        })
+      )
+    
+
+      
+  }
   
-
-
   render() {
+    const { user } = this.props.auth0
     return (
       <div>
       <Filter handleSelect={this.handleSelect}/>
@@ -91,7 +124,21 @@ class CardsContainers extends React.Component {
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
-                      <Button variant="outline-danger" id="btn" style={{ }} onClick={this.ChangeColor}>♥️</Button>
+                      <Button variant="outline-danger" id="btn" onClick={() => {
+                        if(item.likes.includes(user.email)){
+                          swal({
+                                title: " Farm Already Added ",
+                                text: `${item.farmName} is already addded to your favorites`,
+                                icon: "error",
+                                button: "Continue",
+                            })
+                        } else {
+                        item.likes.push(user.email);
+                        this.updatelikes(item)}
+
+                        }
+                        }>
+                        ♥️</Button>
                     </Card.Body>
                   </Card>
                 </div>
@@ -110,4 +157,4 @@ class CardsContainers extends React.Component {
   }
 }
 
-export default CardsContainers;
+export default withAuth0(CardsContainers);

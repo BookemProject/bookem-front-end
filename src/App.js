@@ -21,6 +21,7 @@ import FooterBeforeLogin from './Components/FooterBeforeLogin';
 
 
 class App extends React.Component {
+  
     render() {
       const { isAuthenticated } = this.props.auth0;
       return (
