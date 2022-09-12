@@ -27,7 +27,16 @@ img{
 p {
   font-size: 15px;
 }
-Nav.Link
+.nav
 {
+  float: left;
+  display: flex;
   text-align: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.top{
+  border-top: 1px solid gray;
+  
+ 
 }

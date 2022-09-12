@@ -10,7 +10,7 @@ import "../Styles/AboutUs.css";
 class SacendSection extends React.Component {
     render() {
       return (
-        <Container className="border">
+        <Container >
         <Row className="row:after">
            <Col sm={4} className="column">
             

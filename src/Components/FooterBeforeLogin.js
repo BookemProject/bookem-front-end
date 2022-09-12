@@ -11,8 +11,8 @@ import "../Styles/Footer.css";
 class FooterBeforeLogin extends React.Component {
   render() {
     return (
-     
-        <Container className="row:after" id="footer">
+      <div className="top">
+        <Container  id="footer">
         <Row className="row:after">
         <Col  className = "column">
           <Navbar.Brand id="logo">BOOKEM</Navbar.Brand>
@@ -20,11 +20,11 @@ class FooterBeforeLogin extends React.Component {
           
          
           
-          <Col className="column">
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#AboutUs">About Us</Nav.Link>
-            <Nav.Link href="#Services">Services</Nav.Link>
-            <Nav.Link href="#Testimonials">Testimonials</Nav.Link>
+          <Col className="nav">
+            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Home">Home</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#AboutUs">About Us</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Services">Services</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Testimonials">Testimonials</Nav.Link>
             </Col>
          
             <Col  className = "column">     
@@ -43,7 +43,7 @@ class FooterBeforeLogin extends React.Component {
             </Col>
           </Row>
         </Container>
- 
+        </div>
 
   
    
