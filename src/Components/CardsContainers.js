@@ -10,6 +10,7 @@ import Filter from './Filter';
 import { withAuth0 } from '@auth0/auth0-react';
 import swal from 'sweetalert';
 import '../Styles/Filter.css';
+import { Link } from "react-router-dom";
 // import FarmInformation from "./FarmInformation";
 
 class CardsContainers extends React.Component {
@@ -120,7 +121,8 @@ class CardsContainers extends React.Component {
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
-                      <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
+                      
+                      <Button variant="outline-secondary" id="btn1" onClick={() => {this.props.passItem(item)}}><Link style={{ textDecoration: 'none', color: 'black' }} to="/farminfo">More Details</Link></Button>
                       <Button variant="outline-danger" id="btn" onClick={() => {
                         if(item.likes.includes(user.email)){
                           swal({
@@ -144,7 +146,7 @@ class CardsContainers extends React.Component {
             </Container>
         ) : (
           <div>
-            <h3>No Farms Found At The Desired Location 🏚️</h3>
+            <h3 id="h3NoFarmsFound">No Farms Found At The Desired Location 🏚️</h3>
           </div>
         )}
       </div>

@@ -6,8 +6,8 @@ class Filter extends React.Component {
 
     render() {
       return (
-        <Nav justify variant="tabs" id="filter-tabs" onSelect={(eventKey) => this.props.handleSelect(eventKey)} defaultActiveKey="All">
-        <Nav.Item>
+        <Nav justify variant="tabs" style={{ display: "flex", flexDirection:"row"}} id="filter-tabs" onSelect={(eventKey) => this.props.handleSelect(eventKey)} defaultActiveKey="All">
+        <Nav.Item >
           <Nav.Link  style={{ textDecoration: 'none', color: 'black' }} eventKey="All">All</Nav.Link>
         </Nav.Item>
         <Nav.Item>

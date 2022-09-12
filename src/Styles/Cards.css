@@ -165,7 +165,7 @@
     margin: 0;
 }
 
-h3 {
+#h3NoFarmsFound {
     display: flex;
     justify-content: center;
     align-items: center;
