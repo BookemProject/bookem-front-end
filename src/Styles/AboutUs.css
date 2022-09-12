@@ -1,0 +1,49 @@
+.column {
+    float: left;
+    
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  #icons{
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+     
+  }
+  img{
+      padding: 5px;
+      height: 300px;
+  }
+  p  {
+    font-family: Verdana;
+  }
+  
+  h4 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .image {
+    width: 150;
+    height: 150;
+    margin: 5;
+    resize: 'contain';
+    
+  }
+  .border
+  {
+    border-bottom: 5px solid ;
+  }
+  .line{
+    border-bottom: 5px solid;
+    display: block;
+ }
