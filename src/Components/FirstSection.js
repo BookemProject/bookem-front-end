@@ -13,14 +13,14 @@ class FirstSection extends React.Component {
       return (
         <Container >
         <Row className="row:after">
-        <Col sm={6} className="column">
+        <Col sm={6} className="titleaboutus">
       <h1> About Us </h1>
        </Col>
-       <Col sm={6} className="column">
+       <Col sm={6} className="titleaboutus">
        <Card.Img variant="top" src={require("../images/logo.jpeg")} />
        </Col>
        </Row>
-        <Row className='firstsection'>
+        <div className='firstsection'>
          <p>Bookem is a website that gives the user ease of use to search for farms anywhere in jordan, and create a booking service in the website To facilitate communication with Home/Farm owners.</p>
         <h4> Aims and objectives</h4>
         <ul>
@@ -32,7 +32,7 @@ class FirstSection extends React.Component {
    <li>
      Everyone interested in traveling and trips</li>
      <li> Home/Farm owners. </li> </ul>
-          </Row>
+          </div>
           <Row> <span class="line" ></span></Row>
            </Container>
         )

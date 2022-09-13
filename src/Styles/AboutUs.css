@@ -45,4 +45,13 @@
 }
 .firstsection{
   text-align: left ;
+  align-items: left;
+}
+
+.titleaboutus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:300px;
 }
