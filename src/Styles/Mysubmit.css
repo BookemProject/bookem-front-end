@@ -61,5 +61,14 @@
 }
 #myButton{
     margin-left:10px;
+    background-color: #1e62d8;
+    color: white;
+    width: 150px;
+    margin-right:360px;
+    margin-top:20px
+    
+}
+.form-check{
+  text-align: left;
 }
 
