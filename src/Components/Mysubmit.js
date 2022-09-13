@@ -206,12 +206,12 @@ render(){
             <option value = "Amman" id="options">Amman</option>
             <option value = "Zarqa" id="options">Zarqa</option>
             <option value = "Irbid" id="options">Irbid</option>
-            <option value = "Jerrash" id="options">Jerrash</option>
+            <option value = "Jerash" id="options">Jerash</option>
             <option value = "Tafela" id="options">Tafela</option>
             <option value = "Karak" id="options">Karak</option>
             <option value = "Ajloun" id="options">Ajloun</option>
             <option value = "Aqaba" id="options">Aqaba</option>
-            <option value = "Maan" id="options">Maan</option>
+            <option value = "Ma'an" id="options">Ma'an</option>
             <option value = "Madaba" id="options">Madaba</option>
             <option value = "Mafraq" id="options">Mafraq</option>
             <option value = "Balqa" id="options">Balqa</option>
