@@ -8,8 +8,8 @@ import "../Styles/Services.css";
 class Services extends React.Component {
     render() {
       return (
-        <div >
-        <h1 id="hh1">Check out these beautiful farms!</h1>
+        <div id="Services" style={{ height: "100vh" }}>
+        <h1 id="hh1">What Do We Offer!</h1>
         <Container id="bodyCard">
               <Row xs={1} sm={2} md={3} lg={4} >
               <Col>
