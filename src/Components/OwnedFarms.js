@@ -192,6 +192,7 @@ deleteFarm = (id)=>{
 render(){
   return (
     <div>
+    <h3>My Belongings</h3>
     <br></br>
     {this.props.userFarms.length ? (
         <Container id="bodyCard">
@@ -226,8 +227,7 @@ render(){
       
     ) : (
       <div>
-        <h3>No Farms Found 🏚️ </h3>
-        <h3>Try again </h3>
+        <h3>No Farms Found 🏚️</h3>
       </div>
     )}
 
@@ -269,17 +269,18 @@ render(){
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom2" htmlFor="Select">Select Menu</Form.Label>
           <Form.Select id="FormBox" name = "City" defaultValue={this.state.selectedFarm.farmName}>
-            <option value = "Amman" id="options"> Amman</option>
-            <option value = "Zarqa" id="options"> Zarqa</option>
-            <option value = "Irbid" id="options"> Irbid</option>
-            <option value = "Jerrash" id="options"> Jerrash</option>
+            <option value = "Amman" id="options">Amman</option>
+            <option value = "Zarqa" id="options">Zarqa</option>
+            <option value = "Irbid" id="options">Irbid</option>
+            <option value = "Jerrash" id="options">Jerrash</option>
             <option value = "Tafilah" id="options">Tafila</option>
-            <option value = "Karak" id="options"> Karak</option>
-            <option value = "Ajloun" id="options"> Ajloun</option>
-            <option value = "Aqaba" id="options"> Aqaba</option>
-            <option value = "Ma'an" id="options"> Ma'an</option>
-            <option value = "Madaba" id="options"> Madaba</option>
+            <option value = "Karak" id="options">Karak</option>
+            <option value = "Ajloun" id="options">Ajloun</option>
+            <option value = "Aqaba" id="options">Aqaba</option>
+            <option value = "Ma'an" id="options">Ma'an</option>
+            <option value = "Madaba" id="options">Madaba</option>
             <option value = "Mafraq" id="options">Mafraq</option>
+            <option value = "Balqa" id="options">Balqa</option>
           </Form.Select>
         </Form.Group >
         <Form.Group id = "checkboxesFlex" className="mb-3" name = "checklist">

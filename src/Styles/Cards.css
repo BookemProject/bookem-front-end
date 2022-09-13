@@ -145,6 +145,23 @@
     margin-left: 10px;
 }
 
+#btn1 {
+    color:black
+}
+
+#btn1:hover {
+    color:white
+}
+
+#btninner{
+    color:black;
+}
+
+#btninner:hover{
+    color:white;  
+}
+
+
 #cardImg {
     height: 15vw;
     object-fit: cover;
