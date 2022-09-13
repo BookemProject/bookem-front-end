@@ -10,3 +10,9 @@
 #userImage {
     border-radius: 100%;
 }
+
+.row-cols-lg-4>* {
+    flex: 0 0 auto;
+    width:fit-content;
+    padding: 30px;
+}
