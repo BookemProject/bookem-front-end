@@ -9,8 +9,8 @@ class SacendSection extends React.Component {
       return (
         <>
         <div id="part1">
-        <h1 style={{color:"#004aac"}}>Our Services</h1>
-          <video width="100%" height="500" controls style={{border:"1px solid #004aac"}}>
+        <h1 style={{color:"#004aac", paddingBottom:"25px"}}>Our Services</h1>
+          <video width="100%" height="500" controls style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
       <source src={require('../videos/Bookem.mp4')} type="video/mp4"/>
      </video>
         </div>

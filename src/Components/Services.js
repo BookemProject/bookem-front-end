@@ -9,7 +9,7 @@ class Services extends React.Component {
     render() {
       return (
         <div id="Services" style={{ height: "100vh" }}>
-        <h1 id="hh1">What Do We Offer!</h1>
+        <h1 id="hh1" style={{color:"#004aac"}}>What Do We Offer!</h1>
         <Container id="bodyCard">
               <Row xs={1} sm={2} md={3} lg={4} >
               <Col>
@@ -17,8 +17,8 @@ class Services extends React.Component {
                   <Card style={{ width: "18rem" }} id="card">
                     <Card.Img variant="top" src={require("../images/serviceDescover.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Discover all our farms</Card.Title>
-                      <Card.Text id="cardText">Finding Jordan's beautiful farms is easy and possible. Join us to Explore them, Bookem helps you organize your vacation with ease!</Card.Text>
+                      <Card.Title id="cardTitle" style={{color:"#004aac"}}>Discover all our farms</Card.Title>
+                      <Card.Text id="cardText" style={{color:"#092953"}}>Finding Jordan's beautiful farms is easy and possible. Join us to Explore them, Bookem helps you organize your vacation with ease!</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
@@ -28,8 +28,8 @@ class Services extends React.Component {
                   <Card style={{ width: "18rem" }} id="card">
                     <Card.Img variant="top" src={require("../images/farm4.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Add your farm</Card.Title>
-                      <Card.Text id="cardText">Bookem helps you with marketing your farm, "enjoy more bookings and more money"</Card.Text>
+                      <Card.Title id="cardTitle" style={{color:"#004aac"}}>Add your farm</Card.Title>
+                      <Card.Text id="cardText" style={{color:"#092953"}}>Bookem helps you with marketing your farm, "enjoy more bookings and more money"</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
@@ -39,8 +39,8 @@ class Services extends React.Component {
                   <Card style={{ width: "18rem" }} id="card">
                     <Card.Img variant="top" src={require("../images/serviceOrganize.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Organize your trip</Card.Title>
-                      <Card.Text id="cardText">Bookem helps you find out the details of the farm you like, its location and the weather on the day of your reservation.
+                      <Card.Title id="cardTitle" style={{color:"#004aac"}}>Organize your trip</Card.Title>
+                      <Card.Text id="cardText" style={{color:"#092953"}}>Bookem helps you find out the details of the farm you like, its location and the weather on the day of your reservation.
                        </Card.Text>
                     </Card.Body>
                   </Card>
@@ -51,8 +51,8 @@ class Services extends React.Component {
                   <Card style={{ width: "18rem" }} id="card">
                     <Card.Img variant="top" src={require("../images/serviceGarantee.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Reliable Guarantees</Card.Title>
-                      <Card.Text id="cardText">
+                      <Card.Title id="cardTitle" style={{color:"#004aac"}}>Reliable Guarantees</Card.Title>
+                      <Card.Text id="cardText" style={{color:"#092953"}}>
                       Travel with peace of mind: our guarantees protect your exchanges and your farm</Card.Text>
                     </Card.Body>
                   </Card>
