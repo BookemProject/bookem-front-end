@@ -21,10 +21,10 @@ class FooterBeforeLogin extends React.Component {
          
           
           <Col className="nav">
-            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Home">Home</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#AboutUs">About Us</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Services">Services</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Testimonials">Testimonials</Nav.Link>
+            <Nav.Link id="tabs" style={{ textDecoration: 'none',  textAlign:"left" }} href="#Home">Home</Nav.Link>
+            <Nav.Link id="tabs" style={{ textDecoration: 'none',  textAlign:"left" }} href="#AboutUs">About Us</Nav.Link>
+            <Nav.Link id="tabs" style={{ textDecoration: 'none',  textAlign:"left" }} href="#Services">Services</Nav.Link>
+            <Nav.Link id="tabs" style={{ textDecoration: 'none',  textAlign:"left" }} href="#Testimonials">Testimonials</Nav.Link>
             </Col>
          
             <Col  className = "column">     
