@@ -207,6 +207,7 @@ render(){
                 <Card.Img variant="top" src={item.imgURL} id="cardImg"  />
                 <Card.Body id="info" style={{ margin: "-10px 0px",  }}>
                   <Card.Title id="cardTitle">{item.farmName}</Card.Title>
+                  <Card.Text id="cardText"> {item.price} JD's a day</Card.Text>
                   <Card.Text id="cardText">{item.location}</Card.Text>
                   {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
                   <Button variant="outline-secondary" id="ButtonDesign" className="EditButton" onClick={() => this.handleModal(item)}>  <IoMdCreate/>  Edit</Button>
@@ -269,7 +270,7 @@ render(){
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom2" htmlFor="Select">Select Menu</Form.Label>
-          <Form.Select id="FormBox" name = "City" defaultValue={this.state.selectedFarm.farmName}>
+          <Form.Select id="FormBox" name = "City" defaultValue={this.state.selectedFarm.location}>
             <option value = "Amman" id="options">Amman</option>
             <option value = "Zarqa" id="options">Zarqa</option>
             <option value = "Irbid" id="options">Irbid</option>
