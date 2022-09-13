@@ -25,8 +25,8 @@ constructor(props){
     OwnedFarms:this.props.userFarms,
     showModel:false,
     showModelComponent:false,
-    Wifi:false,
-    Pool:false,
+    Wifi:true,
+    Pool:true,
     Parking:false,
     
   }
@@ -284,41 +284,14 @@ render(){
             <option value = "Balqa" id="options">Balqa</option>
           </Form.Select>
         </Form.Group >
-        <Form.Group id = "checkboxesFlex" className="mb-3" name = "checklist">
-          <Form.Check
-            type="checkbox"
-            id="Wifi"
-            label="Wifi"
-            name = "Wifi"
-            onClick={this.handleChangeWifi}
-            defaultChecked = {this.state.selectedFarm.wifi}
-          />
-           <Form.Check
-            type="checkbox"
-            id="Pool"
-            label="Pool"
-            name = "Pool"
-            onClick={this.handleChangePool}
-            defaultChecked = {this.state.selectedFarm.pool}
-          />
-           <Form.Check
-            type="checkbox"
-            id="Parking"
-            label="Parking"
-            name = "Parking"
-            onClick={this.handleChangeParking}
-            defaultChecked = {this.state.selectedFarm.parking}
-          />
-       
-         
-        </Form.Group>
+        
         
       </fieldset>
      
       <Button variant="outline-secondary" id="ButtonDesign"  type="submit" >Apply Your new Updates</Button>
     </Form>
    
-      <Button variant="outline-secondary" id="ButtonDesign"   onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
+      <Button variant="outline-secondary" id="ButtonDesignDelete"   onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
 
 
 

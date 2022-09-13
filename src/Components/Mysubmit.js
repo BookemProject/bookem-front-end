@@ -32,11 +32,11 @@ componentDidMount = async () =>{
     const { user } = this.props.auth0;         
      const data =  await axios.get(`http://localhost:3001/OwnedFarms?email=${user.email}`)     
 
-           console.log("this is the result mate ",data.data)
+          
            this.setState({
             farms:data.data
            })            
-           console.log("owned farms " , this.state.farms.data)
+          
   }catch {
 console.log("error")
 
@@ -115,7 +115,7 @@ AddNewFarm = (e) =>{
         icon: "success",
         button: "Continue",
       });
-      console.log(result.data);
+     
      
     })
     .catch(err=>{
@@ -130,7 +130,7 @@ AddNewFarm = (e) =>{
 
     // const email ="basharnobeh2001@gmail.com"
     const  user  = this.props.auth0
-    console.log(id);
+    
     axios
     .delete(`http://localhost:3001/removeFarm/${id}?owner=${user.email}`) //http://localhost:3001/deleteBook?id=${id}
     .then(result =>{
