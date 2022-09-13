@@ -22,7 +22,7 @@ class FarmInformation extends React.Component{
         enddate:'',
         weathercondition:'',
         weatherTempeature:'',
-        price:10,
+        price:'',
         show:false,
         cards:this.props.cards,
 
@@ -63,7 +63,7 @@ likes:item.likes,
 // get lan and lon from location API  
 componentDidMount=()=>{
         
-    axios.get(`https://bookem-server.herokuapp.com/map?city=${this.state.city}`).then(res=>{
+    axios.get(`https://bookem-server.herokuapp.com/map?city=${this.state.cards.location}`).then(res=>{
         
         
         this.setState({
@@ -83,7 +83,7 @@ handleStartDate=async(e)=>{
         startdate:startdate
        
     })
-    axios.get(`https://bookem-server.herokuapp.com/weather?city=${this.state.city}&date=${e.target.value}`)
+    axios.get(`https://bookem-server.herokuapp.com/weather?city=${this.state.cards.location}&date=${e.target.value}`)
     .then(result=>{
     
        const weatherCondtion=result.data.condition.text;
@@ -108,7 +108,7 @@ handleEndDate=(e)=>{
   
   
    let  daysAmount= e.target.value.slice(e.target.value.length -2) - this.state.startdate.slice(this.state.startdate.length -2) ;
-   let totalCost=this.state.price*daysAmount
+   let totalCost=this.state.cards.price*daysAmount
    this.setState({
 
     price:totalCost
@@ -174,7 +174,7 @@ return (
 					<div className="col-md-7 col-md-push-5">
 						<div className="booking-cta">
 
-              <FarmWeather city={this.state.city} weathercondition={this.state.weathercondition} weatherTempeature={this.state.weatherTempeature} startdate={this.state.startdate} />
+              <FarmWeather city={this.state.cards.location} weathercondition={this.state.weathercondition} weatherTempeature={this.state.weatherTempeature} startdate={this.state.startdate} />
 							
 						</div>
 					</div>

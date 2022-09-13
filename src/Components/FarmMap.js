@@ -20,7 +20,7 @@ return (
     <div id="row">
       <div className="col-md-6">
         <div className="col-md-10 col-md-offset-1">
-          <div className="section-title">
+          <div className="section-content">
             <h2 className="h2">What this place offers</h2>
           </div>
           <p> <FaBed  style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:15}}/> {this.props.cards.bedrooms} Bedrooms</p>
@@ -34,7 +34,7 @@ return (
       <div className="section-title">
             <h2 className="h2">Location</h2>
           </div>
-        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  style={{height:300,width:400}}/></div>
+        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  style={{height:300,width:400,borderRadius: 50}}/></div>
       </div>
     </div>
   </div>

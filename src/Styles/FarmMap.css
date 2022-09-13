@@ -6,7 +6,7 @@
 	text-transform: uppercase;
 	position: relative;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	
 	padding-bottom: 20px;
 }
 .h2::after {
@@ -23,7 +23,7 @@
 
 .team-img{
 
-	background: #444  ;
+	background: #092953;
 	background-size: cover;
 }
 
