@@ -4,11 +4,10 @@ import '../Styles/Testimonials.css';
 class Testimonials extends React.Component {
     render() {
       return (
-           <div>
-  <section className="section" id="testmonial">
+           <div id="testmonial">
+  <section className="section" >
   <div className="container">
-    <h6 className="section-title text-center mb-0">Testmonials</h6>
-    <h6 className="section-subtitle mb-5 text-center">What Our Clients Says</h6>
+    <h1 className="section-title text-center mb-0">Words From Our Clients!</h1>
     <figure className="snip1533">
   <figcaption>
     <blockquote>
@@ -21,7 +20,7 @@ class Testimonials extends React.Component {
 <figure className="snip1533">
   <figcaption>
     <blockquote>
-      <p>Excellent Reception, clean tidy, sweet memories. Thank you all.</p>
+      <p>Excellent Reception, clean tidy, sweet memories and Smooth transaction experience. Thank you all.</p>
     </blockquote>
     <h3>Ursula Gurnmeister</h3>
     <h4>Facebook</h4>
