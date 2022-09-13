@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 .snip1533 {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2px #2179eb73;
   color: #9e9e9e;
   display: inline-block;
   font-family: 'Roboto', Arial, sans-serif;
@@ -15,7 +15,7 @@
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid black;
+  border-top: 5px solid #004aac;
  
 }
 
@@ -35,10 +35,10 @@
 .snip1533 figcaption:before {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: #004aac;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: gray;
+  box-shadow: 0 0 10px #2178eb;
+  color: rgb(255, 255, 255);
   content: "\f10e";
   font-family: 'FontAwesome';
   font-size: 32px;
@@ -51,7 +51,7 @@
 }
 
 .snip1533 h3 {
-  color: #3c3c3c;
+  color: #062a58;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
@@ -68,4 +68,12 @@
   font-style: italic;
   font-weight: 300;
   margin: 0 0 20px;
+}
+
+.section {
+  padding: 85px 0;
+}
+
+.section-title{
+  padding-bottom: 100px;
 }
