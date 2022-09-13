@@ -1,6 +1,7 @@
 import React from 'react';
 import Figure  from './Figure';
 import HeroSection from './HeroSection';
+import HomeCard from './HomeCard';
 import Services from './Services';
 
 class HomeBeforeLogin extends React.Component {
@@ -10,6 +11,7 @@ class HomeBeforeLogin extends React.Component {
            <HeroSection />
            <Figure />
            <Services/>
+           <HomeCard/>
            </div>
         )
     }
