@@ -42,7 +42,7 @@ class Profile extends React.Component {
   componentDidMount = () => {
     const { user } = this.props.auth0;
     axios
-      .get(`http://localhost:3001/getfav?email=${user.email}`)
+      .get(`https://bookem-server.herokuapp.com/getfav?email=${user.email}`)
       .then((result) => {
         this.setState({
           cards: result.data,
