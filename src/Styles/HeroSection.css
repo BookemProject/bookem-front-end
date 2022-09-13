@@ -1,6 +1,6 @@
 #hero-container{
-    background: url('../images/window.png') center center/cover no-repeat; 
-    filter:grayscale(0);
+    background: url('../images/img-home2.jpg') center center/cover no-repeat; 
+    /* filter:grayscale(0.5); */
     height: 100vh;
     width: 100%;
     display: flex;

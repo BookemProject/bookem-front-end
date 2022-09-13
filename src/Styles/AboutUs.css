@@ -1,21 +1,51 @@
+#PART1{
+  align-items: center;
+    padding: 37.5px 200px;
+}
 
+.heading{
+  padding-bottom: 40px;
+}
 .aboutusimage
 {
-  width: 300px;
-   height:300px;
+  width: 100%;
+   height:auto;
    align-items: center;
    
 }
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
+
+} */
+
+#secondPart {
+  display:flex;
+  justify-content:space-between;
+  gap: 70px
+  
+}
+
+.partt {
+  padding: 37.5px 200px;
+
+}
+
+.pargraph {
+  text-align: justify;
+  width: 100%;
+}
+
+.column1 {
+  width:50%;
+  padding-top: 50px;
+  font-size: 18px;
+}
+
+.p1 {
+  font-size: 18px;
 }
