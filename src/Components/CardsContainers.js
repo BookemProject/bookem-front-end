@@ -120,7 +120,7 @@ class CardsContainers extends React.Component {
                     <Card.Img variant="top" src={item.imgURL} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">{item.farmName} </Card.Title>
-                      <Card.Text id="cardText">Price : {item.price} JD's</Card.Text>
+                      <Card.Text id="cardText"> {item.price} JD's a day</Card.Text>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       
                       <Button variant="outline-secondary" id="ButtonDesign" onClick={() => {this.props.passItem(item)}}><Link id="btninner" style={{ textDecoration: 'none', color:"white"}} to="/farminfo">More Details</Link></Button>
