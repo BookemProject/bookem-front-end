@@ -8,9 +8,7 @@ class AboutUs extends React.Component {
     render() {
       return (
            <div>
-           <FirstSection />
            <SacendSection />
-           <ThirdSection />
            </div>
         )
     }
