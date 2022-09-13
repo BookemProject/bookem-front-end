@@ -29,11 +29,11 @@ class FooterAfterLogin extends React.Component {
             <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/myCollections">My Collections</Link></Nav.Link>
     </Col>
         <Col  className = "column">      
-        <p> All right reserved © Bookem | 2022</p>
+        <p className='linesize'> All right reserved © Bookem | 2022</p>
         <div id="icons">
-        <img src={require("../images/facebook.png")} alt="" />
-            <img src={require("../images/instagram.png")} alt="" />
-            <img src={require("../images/pinterest.png")} alt="" />
+        <img className='spacebetween' src={require("../images/facebook.png")} alt="" />
+            <img className='spacebetween' src={require("../images/instagram.png")} alt="" />
+            <img className='spacebetween' src={require("../images/pinterest.png")} alt="" />
       </div>
       </Col>
 

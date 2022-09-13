@@ -25,20 +25,10 @@
    margin: 5;
    resize: 'contain';
   }
-  p  {
-    font-family: Verdana;
-  }
-  
-  h4 {
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
 
-  .border
-  {
-    border-bottom: 5px solid ;
-  }
+
   .line{
-    border-bottom: 5px solid;
+    border-bottom: 2px solid;
     display: block;
  }
  .left
@@ -52,4 +42,7 @@
     justify-content: center;
     flex-direction: column;
     
+}
+.firstsection{
+  text-align: left ;
 }

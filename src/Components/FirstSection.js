@@ -20,7 +20,7 @@ class FirstSection extends React.Component {
        <Card.Img variant="top" src={require("../images/logo.jpeg")} />
        </Col>
        </Row>
-        <Row>
+        <Row className='firstsection'>
          <p>Bookem is a website that gives the user ease of use to search for farms anywhere in jordan, and create a booking service in the website To facilitate communication with Home/Farm owners.</p>
         <h4> Aims and objectives</h4>
         <ul>
