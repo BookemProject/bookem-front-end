@@ -29,7 +29,7 @@ class Services extends React.Component {
                     <Card.Img variant="top" src={require("../images/farm4.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">Add your farm</Card.Title>
-                      <Card.Text id="cardText">Bokem helps you with marketing your farm, "enjoy more bookings and more money"</Card.Text>
+                      <Card.Text id="cardText">Bookem helps you with marketing your farm, "enjoy more bookings and more money"</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
@@ -40,7 +40,7 @@ class Services extends React.Component {
                     <Card.Img variant="top" src={require("../images/serviceOrganize.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">Organize your trip</Card.Title>
-                      <Card.Text id="cardText">Bokem helps you find out the details of the farm you like, its location and the weather on the day of your reservation.
+                      <Card.Text id="cardText">Bookem helps you find out the details of the farm you like, its location and the weather on the day of your reservation.
                        </Card.Text>
                     </Card.Body>
                   </Card>
