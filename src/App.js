@@ -16,7 +16,7 @@ import HeaderBeforeLogin from './Components/HeaderBeforeLogin';
 import HomeBeforeLogin from './Components/HomeBeforeLogin';
 // import AboutUsBeforeLogin from './Components/AboutUsBeforeLogin';
 // import Services from './Components/Services';
-// import Testimonials from './Components/Testimonials';
+import Testimonials from './Components/Testimonials';
 import FooterBeforeLogin from './Components/FooterBeforeLogin';
 import FarmInformation from './Components/FarmInformation';
 
@@ -89,7 +89,7 @@ class App extends React.Component {
             <Routes>
               <Route 
                 exact path="/"
-                element={<HomeBeforeLogin />}
+                element={<><HomeBeforeLogin /> <Testimonials/> </>}
               >
               </Route>
               {/* <Route 
