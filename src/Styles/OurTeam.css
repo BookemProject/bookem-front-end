@@ -158,8 +158,9 @@
       flex-wrap: wrap;
       background-size: cover;
       display: block;
-    margin-left: auto;
-    margin-right: auto 
+      margin-left: auto;
+      margin-right: auto;
+      width:fit-content 
     
     }
 

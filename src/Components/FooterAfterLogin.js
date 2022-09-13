@@ -13,7 +13,7 @@ import Navbar from 'react-bootstrap/Navbar';
 class FooterAfterLogin extends React.Component {
   render() {
     return (
-      <div className="top">
+      <div className="top" style={{marginTop:"50px"}}>
         <Container>
     <Row className="row:after">
     <Col  className = "column">
@@ -22,18 +22,18 @@ class FooterAfterLogin extends React.Component {
         <Col  className = "nav">     
     
      
-        <Nav.Link ><Link  style={{ textDecoration: 'none', color: 'black' }} to="/">Home</Link></Nav.Link>
-            <Nav.Link ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/aboutUs">About Us</Link></Nav.Link>
-            <Nav.Link ><Link style={{ textDecoration: 'none', color: 'black' }} to="/ourTeam">Our Team</Link></Nav.Link>
-            <Nav.Link><Link style={{ textDecoration: 'none', color: 'black' }}  to="/profile">Profile</Link></Nav.Link>
-            <Nav.Link><Link style={{ textDecoration: 'none', color: 'black' }}  to="/myCollections">My Collections</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link  style={{ textDecoration: 'none', color: 'black' }} to="/">Home</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/aboutUs">About Us</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }} to="/ourTeam">Our Team</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/profile">Profile</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/myCollections">My Collections</Link></Nav.Link>
     </Col>
         <Col  className = "column">      
-        <p> All right reserved © Web Name | 2022</p>
+        <p> All right reserved © Bookem | 2022</p>
         <div id="icons">
-        <img src={require("../images/fb-icon.png")}alt="" />
-            <img src={require("../images/insta-icon.png")} alt="" />
-            <img src={require("../images/pint-icon.png")} alt="" />
+        <img src={require("../images/facebook.png")} alt="" />
+            <img src={require("../images/instagram.png")} alt="" />
+            <img src={require("../images/pinterest.png")} alt="" />
       </div>
       </Col>
 
