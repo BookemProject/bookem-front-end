@@ -7,7 +7,7 @@ class Testimonials extends React.Component {
            <div id="testmonial">
   <section className="section" >
   <div className="container">
-    <h1 className="section-title text-center mb-0">Words From Our Clients!</h1>
+    <h1 className="section-title text-center mb-0" style={{color:"#004aac"}}>Words From Our Clients!</h1>
     <figure className="snip1533">
   <figcaption>
     <blockquote>
