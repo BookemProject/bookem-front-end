@@ -18,33 +18,33 @@ class SacendSection extends React.Component {
         <h1>Bookem By The Numbers</h1>
         <div className="part1">
           <div className='inner'>
-          <h3>2022</h3>
-          <p>Year Founded</p>
+          <h1>2022</h1>
+          <p className="p1">Year Founded</p>
           </div>
           <div className='inner'>
-          <h3>350+</h3>
-          <p>Available Farms</p>
+          <h1>350+</h1>
+          <p className="p1">Available Farms</p>
           </div>
           <div className='inner'>
-          <h3>1000+</h3>
-          <p>Active Users</p>
+          <h1>1000+</h1>
+          <p className="p1">Active Users</p>
           </div>
           <div className='inner'>
-          <h3>75 JD</h3>
-          <p>Book a Farm Starting With</p>
+          <h1>75 JD</h1>
+          <p className="p1">Book a Farm Starting With</p>
           </div>
           <div className='inner'>
-          <h3>300+</h3>
-          <p>Average Booking Rate Per Month</p>
+          <h1>300+</h1>
+          <p className="p1">Average Booking Rate Per Month</p>
           </div>
           <div className='inner'>
-          <h3>12</h3>
-          <p>Cities Served</p>
+          <h1>12</h1>
+          <p className="p1">Cities Served</p>
           </div>
         </div>
-        <p>
+        <p className="p1">
         We're dedicated to our people, guided by our values and powered by our culture. This is the driving force
-        behind our success. It's what has taken us from a <br></br> 5-person startup to a global team of hundreds helping
+        behind our success. It's what has taken us from a 5-person startup to a global team of hundreds helping
         people make billions of dollars in sales and others relaxing after a full week.
         </p>
          </div>
