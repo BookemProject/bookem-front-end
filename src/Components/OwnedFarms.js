@@ -11,6 +11,7 @@ import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
 import swal from 'sweetalert';
+import { IoMdCreate } from "react-icons/io";
 
 
 
@@ -208,7 +209,7 @@ render(){
                   <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                   <Card.Text id="cardText">{item.location}</Card.Text>
                   {/* <Card.Text id="cardText">{item.description}</Card.Text> */}
-                  <Button variant="outline-secondary" id="btn1" onClick={() => this.handleModal(item)}>Edit</Button>
+                  <Button variant="outline-secondary" id="ButtonDesign" className="EditButton" onClick={() => this.handleModal(item)}>  <IoMdCreate/>  Edit</Button>
 
              
                   
@@ -314,10 +315,10 @@ render(){
         
       </fieldset>
      
-      <Button variant="outline-secondary" id="btnUpdate"  type="submit" >Click to Update !</Button>
+      <Button variant="outline-secondary" id="ButtonDesign"  type="submit" >Apply Your new Updates</Button>
     </Form>
    
-      <Button variant="outline-secondary" id="btndelete"   onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
+      <Button variant="outline-secondary" id="ButtonDesign"   onClick = { ()=> this.deleteFarm(this.state.selectedFarm._id)  }>Delete This Farm</Button>
 
 
 

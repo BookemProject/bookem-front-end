@@ -21,6 +21,7 @@ Pool : false,
 Parking : false,
 farms:[],
 currentFarm : "",
+UploadedPicture:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
 
 
 
@@ -155,6 +156,24 @@ AddNewFarm = (e) =>{
     
     }
 
+// not ready on change image src
+    pictureHandler = (e) =>{
+if(/\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(e.target.value)){
+  this.setState({
+    UploadedPicture:e.target.value,
+  })
+}else {
+  this.setState({
+    UploadedPicture:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+  })
+}
+    
+    
+     
+
+
+
+    }
     
 
   
@@ -173,7 +192,7 @@ render(){
     <div>
     <div id = "mainDivsubmit" className="container">
 <Card id ="myCardsubmit" style={{ width: 'auto' , height:"auto" }}>
-      <Card.Img className = "img-fluid"id="CardImgsubmit" style={{ width: '450px' , height:"455px", }} variant="top" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+      <Card.Img className = "img-fluid"id="CardImgsubmit" style={{ width: '450px' , height:"455px", }} variant="top" src={this.state.UploadedPicture} />
       </Card>
      <div id="formDiv">
      
@@ -181,11 +200,11 @@ render(){
       <fieldset id = "GridItems">
         <Form.Group className="mb-3">
           <Form.Label id = "textInFrom"htmlFor="TextInput">Farm Name</Form.Label>
-          <Form.Control id="farmName" placeholder="Name" name = "farmName" />
+          <Form.Control id="farmName" placeholder="Name" name = "farmName"/>
         </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label id = "textInFrom" htmlFor="TextInput">Image URL</Form.Label>
-          <Form.Control id="imgURL" placeholder="Insert Image url" name = "imgURL"/>
+        <Form.Group className="mb-3" >
+          <Form.Label id = "textInFrom" htmlFor="TextInput" >Image URL</Form.Label>
+          <Form.Control id="imgURL" placeholder="Insert Image url" name = "imgURL" onChange={this.pictureHandler}  />
         </Form.Group>
        
         <Form.Group className="mb-3">
