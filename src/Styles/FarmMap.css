@@ -21,7 +21,11 @@
 }
 
 
+.team-img{
 
+	background: #444  ;
+	background-size: cover;
+}
 
 
 #team {

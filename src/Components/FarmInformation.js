@@ -15,14 +15,14 @@ class FarmInformation extends React.Component{
 
         this.state={
        
-        city:'amman',
+        city:this.props.location,
         longitude:'',
         latitude:'',
         startdate:'',
         enddate:'',
         weathercondition:'',
         weatherTempeature:'',
-        price:'10',
+        price:10,
         show:false,
         cards:this.props.cards,
 
@@ -138,34 +138,19 @@ render(){
 
 return (
 <>
-  {/* <h2> Farmname: {this.props.farm.farmName}</h2>
-  <img src={this.props.farm.imgURL} >  </img>
-  <ul>
-  <li>location: {this.props.farm.location}</li>
-  <li>price: {this.props.farm.price}</li>
-  <li>Wifi: {his.props.farm.wifi}</li>
-  <li>Pool:{this.props.farm.pool}</li>
-  <li>parking:{this.props.farm.parking}</li>
-  <li>bedrooms:{this.props.farm.bedrooms}</li>
-  <li>owner:{this.props.farm.owner}</li>
-  <li>available: {this.props.farm.owner}</li>
-   </ul>    
-  <p>{this.props.farm.description} </p> */}
- {/* <h1></h1>
- <img className='farm' alt='farm' src="https://upload.wikimedia.org/wikipedia/commons/d/df/Town_and_Country_fh000023.jpg" />
- <p></p> */}
+  
 
 <section className= 'farmoverview'>  
  <div id="about">
   <div className="container-fluid">
     <div className="row">
-      <div className="col-xs-12 col-md-6 about-img"></div>
+      <div className="col-xs-12 col-md-6 about-img"> <img  src={this.state.cards.imgURL} alt='farm'/></div>
       <div className="col-xs-12 col-md-3 col-md-offset-1">
         <div className="about-text">
           <div className="section-title">
-            <h2 className="h2">Green Garden</h2>
+            <h2 className="h2">{this.state.cards.farmName}</h2>
           </div>
-          <p>luxury facility that is intended primarily for vacationers and is usually located near special attractions, such as beaches and seashores, scenic or historic areas, ski parks, or spas.</p>
+          <p>{this.state.cards.description}</p>
           <br></br>
         </div>
       </div>
@@ -177,12 +162,12 @@ return (
 <div className='farminfo'>
 
     <div className="map">
-     <FarmMap  latitude={this.state.latitude} longitude={this.state.longitude}  />
+     <FarmMap  latitude={this.state.latitude} longitude={this.state.longitude} cards={this.state.cards} />
     </div>  
 </div>
 
 
-<div id="booking" className="section">
+<div id="booking" className="section"  style={{backgroundImage: `url(${this.state.cards.imgURL})`}}>
 		<div className="section-center">
 			<div className="container">
 				<div className="row">

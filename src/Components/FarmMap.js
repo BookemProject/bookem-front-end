@@ -1,6 +1,8 @@
 import React from "react";
 import '../Styles/FarmMap.css';
-import {FaWifi,FaBed,FaParking,FaSwimmingPool} from "react-icons/fa"
+import {FaWifi,FaBed,FaParking,FaSwimmingPool} from "react-icons/fa";
+import { BsWifiOff } from "react-icons/bs";
+
 const LOCATION_KEY='pk.e6f569abb6089f922ac76a14ac4bc5e4';
 
 // render farm map 
@@ -21,10 +23,11 @@ return (
           <div className="section-title">
             <h2 className="h2">What this place offers</h2>
           </div>
-          <p> <FaWifi style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/><span style={{marginLeft:1}}>     Wifi</span></p>
-          <p> <FaBed  style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:15}}/>Rooms</p>
-          <p> <FaParking style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:20}}/>Parking</p>
-          <p> <FaSwimmingPool style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/>POOL</p>
+          <p> <FaBed  style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:15}}/> {this.props.cards.bedrooms} Bedrooms</p>
+          {this.props.cards.wifi?<p> <FaWifi style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/><span style={{marginLeft:1}}> Wifi</span></p>:<p> <BsWifiOff style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/><span style={{marginLeft:1}}> No Wifi</span></p>}
+          {this.props.cards.parking?<p> <FaParking style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:20}}/> Parking</p>:<p> <FaParking style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:20}}/> No Parking</p>}
+          {this.props.cards.pool?<p> <FaSwimmingPool style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/> POOL</p>:<p> <FaSwimmingPool style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/> NO POOL</p>}
+          
         </div>
       </div>
       <div className="col-md-6">
