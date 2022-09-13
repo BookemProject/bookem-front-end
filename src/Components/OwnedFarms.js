@@ -114,7 +114,7 @@ updateFarm = (e) =>{
   // }
   // if(e.target.Parking.value === 'on'){
   //   Parking= true;
-  // }
+  // }  
 
   let obj = {
    
