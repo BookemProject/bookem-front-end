@@ -106,15 +106,15 @@ updateFarm = (e) =>{
   let Wifi = false;
   let Pool = false;
   let Parking = false;
-  if(e.target.Wifi.value === 'on'){
-    Wifi = true;
-  }
-  if(e.target.Pool.value === 'on'){
-    Pool = true;
-  }
-  if(e.target.Parking.value === 'on'){
-    Parking= true;
-  }
+  // if(e.target.Wifi.value === 'on'){
+  //   Wifi = true;
+  // }
+  // if(e.target.Pool.value === 'on'){
+  //   Pool = true;
+  // }
+  // if(e.target.Parking.value === 'on'){
+  //   Parking= true;
+  // }
 
   let obj = {
    
