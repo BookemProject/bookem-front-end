@@ -7,18 +7,9 @@
 	position: relative;
 	margin-top: 10px;
 	
-	padding-bottom: 20px;
+	
 }
-.h2::after {
-	position: absolute;
-	content: "";
-	background: #277BC0;
-	height: 2px;
-	width: 70px;
-	bottom: 0;
-	margin-left: -35px;
-	left: 50%;
-}
+
 
 
 .team-img{
@@ -48,4 +39,12 @@
 #row{
 
     display: flex;
+}
+
+.mapimage{
+
+
+	border: 5px solid #092953;
+	height: 400px;
+	width: 800px;
 }

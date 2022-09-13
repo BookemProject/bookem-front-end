@@ -19,7 +19,7 @@ return (
         <form className="paymentform">
           <div className="products">
             <h3 className="titlepayment">Checkout</h3>
-            <div className="totalpayment">Total<span className="price">${this.props.price}</span></div>
+            <div className="totalpayment">${this.props.price}</div>
           </div>
           <div className="card-details">
             <h3 className="titlepayment">Credit Card Details</h3>
@@ -31,7 +31,7 @@ return (
               <div className="form-group col-sm-5">
                 <label htmlFor="">Expiration Date</label>
                 <div className="input-group expiration-date">
-                  <input type="text" className="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1"/>
+                  <input type="text" className="form-control mm" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1"/>
                   <span className="date-separator">/</span>
                   <input type="text" className="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1"/>
                 </div>
@@ -45,7 +45,7 @@ return (
                 <input id="cvc" type="text" className="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1"/>
               </div>
               <div className="form-group col-sm-12">
-                <button type="button" className="btn btn-primary btn-block" style={{width:200}} onClick={this.props.handleClose}>Proceed</button>
+                <button type="button"  id="ButtonDesign" className="checkbutton" style={{height:45}}  onClick={this.props.handleClose}>Proceed</button>
               </div>
             </div>
           </div>

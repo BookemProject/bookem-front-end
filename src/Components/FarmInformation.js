@@ -145,10 +145,12 @@ return (
   <div className="container-fluid">
     <div className="row">
       <div className="col-xs-12 col-md-6 about-img"> <img  src={this.state.cards.imgURL} alt='farm' style={{width:770 ,height:550}} /></div>
-      <div className="col-xs-12 col-md-3 col-md-offset-1">
+      <div className="col-xs-12 col-md-3 col-md-offset-1 bodysection">
         <div className="about-text">
           <div className="section-title">
             <h2 className="h2">{this.state.cards.farmName}</h2>
+            <hr></hr>
+            
           </div>
           <p>{this.state.cards.description}</p>
           <br></br>
@@ -167,18 +169,18 @@ return (
 </div>
 
 
-<div id="booking" className="section"  style={{backgroundImage: `url(${this.state.cards.imgURL})`}}>
-		<div className="section-center">
-			<div className="container">
-				<div className="row">
-					<div className="col-md-7 col-md-push-5">
-						<div className="booking-cta">
+<div id="booking" className="bookingsection"  >
+		
+			
+				
+					
+						
 
-              <FarmWeather city={this.state.cards.location} weathercondition={this.state.weathercondition} weatherTempeature={this.state.weatherTempeature} startdate={this.state.startdate} />
+        <FarmWeather city={this.state.cards.location} weathercondition={this.state.weathercondition} weatherTempeature={this.state.weatherTempeature} startdate={this.state.startdate} />
 							
-						</div>
-					</div>
-					<div className="col-md-4 col-md-pull-7">
+						
+				
+					<div className="col-md-4 col-md-pull-7 bookform">
 						<div className="booking-form">
 							<form>
 								<div className="form-group">
@@ -201,14 +203,14 @@ return (
 								</div>
 								
 								<div className="form-btn">
-									<button className="submit-btn" onClick={this.handleOpen} >Check</button>
+									<button id="ButtonDesign" className="checkbutton" onClick={this.handleOpen} >Check</button>
 								</div>
 							</form>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				
+		
+		
 	</div>
 
 
