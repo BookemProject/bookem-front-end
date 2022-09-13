@@ -17,7 +17,7 @@ class HeaderBeforeLogin extends React.Component {
             <Nav.Link id="navitems" href="#hero-container">Home</Nav.Link>
             <Nav.Link id="navitems" href="#AboutUs">About Us</Nav.Link>
             <Nav.Link id="navitems" href="#Services">Services</Nav.Link>
-            <Nav.Link id="navitems" href="#Testimonials">Testimonials</Nav.Link>
+            <Nav.Link id="navitems" href="#testmonial">Testimonials</Nav.Link>
             <div className='headerbtn'>
             <LoginButton />
             </div>
