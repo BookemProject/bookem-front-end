@@ -138,7 +138,7 @@ updateFarm = (e) =>{
   let id = this.state.selectedFarm._id;
   console.log(id)
   axios
-  .put(`http://localhost:3001/updateFarm/${id}`,obj)
+  .put(`https://bookem-server.herokuapp.com/updateFarm/${id}`,obj)
   .then(result => {
   this.setState({
     farms : result.data

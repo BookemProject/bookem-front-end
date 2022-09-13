@@ -75,7 +75,7 @@ class Profile extends React.Component {
       likes:item.likes,
       }
       axios
-      .put(`http://localhost:3001/removefav/${item._id}`,obj)
+      .put(`https://bookem-server.herokuapp.com/removefav/${item._id}`,obj)
       .then(
         swal({
           title: "succeed ! ",

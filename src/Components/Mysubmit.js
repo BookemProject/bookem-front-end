@@ -30,7 +30,7 @@ UploadedPicture:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ix
 componentDidMount = async () =>{
   try {
     const { user } = this.props.auth0;         
-     const data =  await axios.get(`http://localhost:3001/OwnedFarms?email=${user.email}`)     
+     const data =  await axios.get(`https://bookem-server.herokuapp.com/OwnedFarms?email=${user.email}`)     
 
           
            this.setState({
@@ -103,7 +103,7 @@ AddNewFarm = (e) =>{
     
     
     axios
-    .post(`http://localhost:3001/addFarm`, obj)
+    .post(`https://bookem-server.herokuapp.com/addFarm`, obj)
     .then(result =>{
       this.setState({
         farms:result.data
@@ -132,7 +132,7 @@ AddNewFarm = (e) =>{
     const  user  = this.props.auth0
     
     axios
-    .delete(`http://localhost:3001/removeFarm/${id}?owner=${user.email}`) //http://localhost:3001/deleteBook?id=${id}
+    .delete(`https://bookem-server.herokuapp.com/removeFarm/${id}?owner=${user.email}`) //http://localhost:3001/deleteBook?id=${id}
     .then(result =>{
       
       this.setState({
