@@ -214,6 +214,7 @@ render(){
             <option value = "Maan" id="options">Maan</option>
             <option value = "Madaba" id="options">Madaba</option>
             <option value = "Mafraq" id="options">Mafraq</option>
+            <option value = "Balqa" id="options">Balqa</option>
           </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3" name = "checklist">

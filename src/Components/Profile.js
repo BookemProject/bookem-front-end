@@ -5,6 +5,7 @@ import '../Styles/Profile.css';
 import axios from "axios";
 import swal from 'sweetalert';
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import "../Styles/Cards.css";
 
 
@@ -127,6 +128,7 @@ class Profile extends React.Component {
         </Row>
       </Container>
     </div>
+    <h3>My Favorites</h3>
     </>
     <div>
     
@@ -143,7 +145,7 @@ class Profile extends React.Component {
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
-                      <Button variant="outline-secondary" id="btn1" onClick={() => this.farm(item)}>More Detail</Button>
+                      <Button variant="outline-secondary" id="btn1" onClick={() => {this.props.passItem(item)}}><Link id="btninner" style={{ textDecoration: 'none',}} to="/farminfo">More Details</Link></Button>
                       <Button variant="outline-danger" id="btn" onClick={() => {this.removeFromFav(item)}}>
                         Remove</Button>
                     </Card.Body>
@@ -156,7 +158,7 @@ class Profile extends React.Component {
             </Container>
         ) : (
           <div>
-            <h3>No Farms Found As Favorites 🏚️</h3>
+            <h3>No Farms Found As Favorites 😥</h3>
           </div>
         )}
       </div>
