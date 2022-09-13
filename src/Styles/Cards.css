@@ -166,9 +166,7 @@
 }
 
 #h3NoFarmsFound {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 20%;
     height: 100vh
 }
 

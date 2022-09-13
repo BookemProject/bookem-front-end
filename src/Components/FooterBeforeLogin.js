@@ -21,19 +21,19 @@ class FooterBeforeLogin extends React.Component {
          
           
           <Col className="nav">
-            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Home">Home</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#AboutUs">About Us</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Services">Services</Nav.Link>
-            <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href="#Testimonials">Testimonials</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Home">Home</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#AboutUs">About Us</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Services">Services</Nav.Link>
+            <Nav.Link style={{ textDecoration: 'none', color: 'black', textAlign:"left" }} href="#Testimonials">Testimonials</Nav.Link>
             </Col>
          
             <Col  className = "column">     
-            <p> All right reserved © Web Name | 2022</p>
+            <p> All right reserved © Bookem | 2022</p>
           
             <div id="icons">
-            <img src={require("../images/fb-icon.png")}alt="" />
-            <img src={require("../images/insta-icon.png")} alt="" />
-            <img src={require("../images/pint-icon.png")} alt="" />
+            <img src={require("../images/facebook.png")} alt="" />
+            <img src={require("../images/instagram.png")} alt="" />
+            <img src={require("../images/pinterest.png")} alt="" />
             </div>
             </Col>
             <Col  className = "column"> 
