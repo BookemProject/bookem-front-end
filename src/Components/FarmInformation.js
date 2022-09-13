@@ -63,7 +63,7 @@ likes:item.likes,
 // get lan and lon from location API  
 componentDidMount=()=>{
         
-    axios.get(`http://localhost:3001/map?city=${this.state.city}`).then(res=>{
+    axios.get(`https://bookem-server.herokuapp.com/map?city=${this.state.city}`).then(res=>{
         
         
         this.setState({
@@ -83,7 +83,7 @@ handleStartDate=async(e)=>{
         startdate:startdate
        
     })
-    axios.get(`http://localhost:3001/weather?city=${this.state.city}&date=${e.target.value}`)
+    axios.get(`https://bookem-server.herokuapp.com/weather?city=${this.state.city}&date=${e.target.value}`)
     .then(result=>{
     
        const weatherCondtion=result.data.condition.text;

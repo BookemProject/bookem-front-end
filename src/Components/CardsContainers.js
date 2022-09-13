@@ -45,7 +45,7 @@ class CardsContainers extends React.Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/`)
+      .get(`https://bookem-server.herokuapp.com/`)
       .then((result) => {
         this.setState({
           cards: result.data,
@@ -62,7 +62,7 @@ class CardsContainers extends React.Component {
       this.componentDidMount();
     } else {
       axios
-      .get(`http://localhost:3001/filterFarm?location=${eventKey}`)
+      .get(`https://bookem-server.herokuapp.com/filterFarm?location=${eventKey}`)
       .then((result) => {
         this.setState({
           cards: result.data,
@@ -93,7 +93,7 @@ class CardsContainers extends React.Component {
       likes:item.likes,
       }
       axios
-      .put(`http://localhost:3001/updateLikes/${item._id}`,obj)
+      .put(`https://bookem-server.herokuapp.com/updateLikes/${item._id}`,obj)
       .then(
         swal({
           title: "succeed ! ",
