@@ -1,0 +1,41 @@
+#secCard{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#secCard #secCardText{
+    padding-bottom:30px;
+  text-align: left;
+}
+#secCard #secCardTitle #secCardh1{
+    margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+}
+
+#secCardSec{
+    width: 100%;
+    border: none;
+}
+
+@media screen and (max-width: 960px) {
+    #secCard #secCardTitle{
+        font-size: 30px;
+    }
+    #secCard #secCardText{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #secCard #secCardTitle{
+        font-size: 15px;
+    }
+    #secCard #secCardText{
+        font-size: 10px;
+    }
+}

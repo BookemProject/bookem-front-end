@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Card from 'react-bootstrap/Card';
-import '../Styles/Figure.css'
+import '../Styles/HomeCard.css'
 
 
 
@@ -24,7 +23,7 @@ class HomeCard extends React.Component {
           <Card.Img
             id="secCardImg"
             style={{
-              width: "45%",
+              width: "40%",
               height: "auto",
               marginLeft: "90px",
               borderRadius: "20px",
@@ -34,8 +33,8 @@ class HomeCard extends React.Component {
           />
           <Card.Body>
             <div id="secCardTitle">
-              <h1 style={{ textAlign: "left", paddingTop: "50px" }}>
-                Who Are We!
+              <h1 style={{ textAlign: "left", paddingTop: "50px" }} id="secCardh1">
+              Why you should try Boocem!
               </h1>
             </div>
             <hr />
