@@ -1,6 +1,6 @@
 #card-header{
-    background: rgb(37,35,35);
-    background: linear-gradient(45deg, rgba(37,35,35,1) 0%, rgba(50,50,52,1) 45%, rgba(151,155,156,1) 94%);   
+    background: rgb(9,41,83);
+    background: linear-gradient(60deg, rgba(9,41,83,1) 30%, rgba(0,74,172,1) 69%, rgba(206,235,242,1) 94%);
 }
 
 #userDetails {

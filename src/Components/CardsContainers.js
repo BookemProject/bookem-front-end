@@ -122,7 +122,7 @@ class CardsContainers extends React.Component {
                       <Card.Title id="cardTitle">{item.farmName}</Card.Title>
                       <Card.Text id="cardText">{item.location}</Card.Text>
                       
-                      <Button variant="outline-secondary" id="btn1" onClick={() => {this.props.passItem(item)}}><Link id="btninner" style={{ textDecoration: 'none',}} to="/farminfo">More Details</Link></Button>
+                      <Button variant="outline-secondary" id="ButtonDesign" onClick={() => {this.props.passItem(item)}}><Link id="btninner" style={{ textDecoration: 'none', color:"white"}} to="/farminfo">More Details</Link></Button>
                       <Button variant="outline-danger" id="btn" onClick={() => {
                         if(item.likes.includes(user.email)){
                           swal({
