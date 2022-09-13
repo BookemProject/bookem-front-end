@@ -1,15 +1,16 @@
 .cardweather {
     background-image: url(https://img.freepik.com/premium-vector/sky-background-video-conferencing_23-2148616500.jpg?w=2000);
     background-size: cover;
-    width: 400px;
+    width: 300px;
     height: 350px;
     border-radius: 20px;
-    margin-top: 50px;
+   color: #092953;
     margin-bottom: 50px;
 }
 
 .time-font {
     font-size: 50px;
+    
 }
 
 .sm-font {
@@ -18,8 +19,10 @@
 
 .med-font {
     font-size: 28px;
+    
 }
 
 .large-font {
     font-size: 60px;
 }
+
