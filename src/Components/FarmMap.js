@@ -34,7 +34,7 @@ return (
       <div className="section-title">
             <h2 className="h2">Location</h2>
           </div>
-        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  style={{height:300}}/></div>
+        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  style={{height:300,width:400}}/></div>
       </div>
     </div>
   </div>

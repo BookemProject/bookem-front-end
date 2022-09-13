@@ -144,7 +144,7 @@ return (
  <div id="about">
   <div className="container-fluid">
     <div className="row">
-      <div className="col-xs-12 col-md-6 about-img"> <img  src={this.state.cards.imgURL} alt='farm'/></div>
+      <div className="col-xs-12 col-md-6 about-img"> <img  src={this.state.cards.imgURL} alt='farm' style={{width:770 ,height:550}} /></div>
       <div className="col-xs-12 col-md-3 col-md-offset-1">
         <div className="about-text">
           <div className="section-title">
