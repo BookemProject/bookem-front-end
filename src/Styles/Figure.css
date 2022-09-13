@@ -39,4 +39,43 @@
     width: 100%;
     border: none;
   }
+
+  @media screen and (max-width: 960px) {
+    #myCard #CardTitle{
+      font-size: 30px;
+    }
+    #myCard #CardText{
+      font-size: 15px;
+    }
+
+  }
+  @media screen and (max-width: 850px) {
+    #myCard #CardTitle{
+      font-size: 20px;
+    }
+    #myCard #CardText{
+      font-size: 11px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    #myCard #CardTitle{
+      font-size: 15px;
+    }
+    #myCard #CardText{
+      font-size: 9px;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    #myCard #CardTitle{
+      font-size: 10px;
+    }
+    #myCard #CardText{
+      font-size: 6px;
+    }
+
+  }
   
