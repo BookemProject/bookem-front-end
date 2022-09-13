@@ -21,7 +21,7 @@ return (
       <div className="col-md-6">
         <div className="col-md-10 col-md-offset-1">
           <div className="section-content">
-            <h2 className="h2">What this place offers</h2>
+            <h2 className="h2">What this farm offers</h2>
           </div>
           <p> <FaBed  style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:15}}/> {this.props.cards.bedrooms} Bedrooms</p>
           {this.props.cards.wifi?<p> <FaWifi style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/><span style={{marginLeft:1}}> Wifi</span></p>:<p> <BsWifiOff style={{ fontSize: '50px',fontFamily:'Montserrat',marginRight:25}}/><span style={{marginLeft:1}}> No Wifi</span></p>}
@@ -30,11 +30,11 @@ return (
           
         </div>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-6 ">
       <div className="section-title">
-            <h2 className="h2">Location</h2>
+            <h2 className="h2 location">Location</h2>
           </div>
-        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  style={{height:300,width:400,borderRadius: 50}}/></div>
+        <div className="team-img"><img src={`https://maps.locationiq.com/v3/staticmap?key=${LOCATION_KEY}&center=${this.props.latitude},${this.props.longitude}`}alt='City Map' className='mapimage'  /></div>
       </div>
     </div>
   </div>
