@@ -23,7 +23,6 @@ class ThirdSection extends React.Component {
           <Card.Img variant="top" className="sectionimg" src={require("../images/marketing.png")} />
             </Col>
         </Row>
-        <Row> <span class="line" ></span></Row>
         </Container>
         )
     }
