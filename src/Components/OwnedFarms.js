@@ -193,7 +193,7 @@ deleteFarm = (id)=>{
 render(){
   return (
     <div>
-    <h3>My Belongings</h3>
+    <h3 style={{color:"#004aac"}}>My Belongings</h3>
     <br></br>
     {this.props.userFarms.length ? (
         <Container id="bodyCard">
@@ -228,7 +228,7 @@ render(){
       
     ) : (
       <div>
-        <h3>No Farms Found 🏚️</h3>
+        <h3 style={{color:"#004aac"}}>No Farms Found 🏚️</h3>
       </div>
     )}
 

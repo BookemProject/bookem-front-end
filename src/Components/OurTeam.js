@@ -10,17 +10,19 @@ class OurTeam extends React.Component {
   render() {
     return (
       <div id="body">
+      
         <Container id="containerc">
           <Figure>
             <div id="pic">
               <Figure.Image
                 id="imageBxc"
-                src={require("../images/pic2.png")}
+                src={require("../images/111.png")}
               />
-              <h1 id="ht">Our team</h1>
-              <p id="pt">Discover our team</p>
+        <h1 style={{color:"#004aac"}} id="ht">Our team</h1>
+              
+              {/* <p id="pt">Discover our team</p> */}
             </div>
-            <Figure.Caption id="descr">
+            <Figure.Caption id="descr"    style={{color:"#092953"}}>
               It is our creed. At you, we are convinced that another way to
               choose your travels: an inclusive way, where everyone understands
               their influence and respects their choices. What makes us strong
@@ -34,7 +36,7 @@ class OurTeam extends React.Component {
           <Container id="container">
             <Row xs={1} sm={1} md={2} lg={3}>
               <Col>
-                <Card style={{ width: "18rem" }} id="card">
+                <Card style={{ width: "18rem", marginLeft:"50px" }} id="card">
                   <div id="content">
                     <Card.Img
                       variant="top"
@@ -42,14 +44,14 @@ class OurTeam extends React.Component {
                       src={require("../images/noor.jpeg")}
                     />
                     <Card.Body id="contentBx">
-                      <Card.Title id="name">Noor Alkhateeb</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
+                      <Card.Title id="name"  style={{color:"#004aac"}}>Noor Alkhateeb</Card.Title>
+                      <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} id="card">
+                <Card style={{ width: "18rem", marginLeft:"50px"  }} id="card">
                   <div id="content">
                     <Card.Img
                       variant="top"
@@ -57,14 +59,14 @@ class OurTeam extends React.Component {
                       src={require("../images/yazan.png")}
                     />
                     <Card.Body id="contentBx">
-                      <Card.Title id="name">Yazan Alfarra</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
+                      <Card.Title id="name" style={{color:"#004aac"}}>Yazan Alfarra</Card.Title>
+                      <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} id="card">
+                <Card style={{ width: "18rem", marginLeft:"50px"  }} id="card">
                   <div id="content">
                     <Card.Img
                       variant="top"
@@ -72,14 +74,14 @@ class OurTeam extends React.Component {
                       src={require("../images/bashar.jpg")}
                     />
                     <Card.Body id="contentBx">
-                      <Card.Title id="name">Bashar Nobeh</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
+                      <Card.Title id="name" style={{color:"#004aac"}}>Bashar Nobeh</Card.Title>
+                      <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} id="card">
+                <Card style={{ width: "18rem", marginLeft:"50px"  }} id="card">
                   <div id="content">
                     <Card.Img
                       variant="top"
@@ -87,14 +89,14 @@ class OurTeam extends React.Component {
                       src={require("../images/ihab.jpg")}
                     />
                     <Card.Body id="contentBx">
-                      <Card.Title id="name">Ihab Abbas</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
+                      <Card.Title id="name" style={{color:"#004aac"}}>Ihab Abbas</Card.Title>
+                      <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} id="card">
+                <Card style={{ width: "18rem", marginLeft:"50px"  }} id="card">
                   <div id="content">
                     <Card.Img
                       variant="top"
@@ -102,8 +104,8 @@ class OurTeam extends React.Component {
                       src={require("../images/ibraheem.jpg")}
                     />
                     <Card.Body id="contentBx">
-                      <Card.Title id="name">Ibrahim Almanaseer</Card.Title>
-                      <Card.Text id="job">Full Stack Web developer</Card.Text>
+                      <Card.Title id="name" style={{color:"#004aac"}}>Ibrahim Almanaseer</Card.Title>
+                      <Card.Text id="job1" style={{textAlign:"center", color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
                   </div>
                 </Card>

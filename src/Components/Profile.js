@@ -83,6 +83,7 @@ class Profile extends React.Component {
           icon: "success",
           button: "OK!",
         }),
+        this.componentDidMount(),
         this.componentDidMount()
       )
   }
@@ -128,7 +129,7 @@ class Profile extends React.Component {
         </Row>
       </Container>
     </div>
-    <h3>My Favorites</h3>
+    <h3 style={{color:"#004aac"}}>My Favorites</h3>
     </>
     <div>
     
@@ -158,7 +159,7 @@ class Profile extends React.Component {
             </Container>
         ) : (
           <div>
-            <h3>No Farms Found As Favorites 😥</h3>
+            <h3 style={{color:"#004aac"}}>No Farms Found As Favorites 😥</h3>
           </div>
         )}
       </div>
