@@ -9,8 +9,8 @@ class FirstSection extends React.Component {
     return (
       <div>
         <div id="PART1">
-          <h1 className="heading"> Who We Are and What We Do </h1>
-          <p className="heading p1">
+          <h1 className="heading" style={{color:"#004aac"}}> Who We Are and What We Do </h1>
+          <p className="heading p1"   style={{color:"#092953"}}>
             Bookem's mission is to connect both end point together by allowing
             state owners rent their sweet farms and hard working people rent to
             relax at the end of a full week. We focus on being the best commerce
@@ -36,8 +36,8 @@ class FirstSection extends React.Component {
 
 
         <div className=" partt">
-          <h1 className="heading">Our Company Values</h1>
-          <p className="p1">
+          <h1 className="heading" style={{color:"#004aac"}}>Our Company Values</h1>
+          <p className="p1"   style={{color:"#092953"}}>
             These are the core principles upon which Bookem was built, guiding
             what we do and how we do it. Each employee learns them, loves them
             and lives them. Our People benefit from them every time they use our
@@ -53,7 +53,7 @@ class FirstSection extends React.Component {
 
 
           <div className="column1">
-            <h3 className="pargraph">Customers First</h3>
+            <h3 className="pargraph"  style={{color:"#004aac"}}>Customers First</h3>
             <p className="pargraph">
               Our company exists to help people earn more or relax during the
               weekends. We make every decision and measure every outcome based
@@ -64,8 +64,8 @@ class FirstSection extends React.Component {
 
 
           <div className="column1">
-            <h3 className="pargraph">Team on a Mission</h3>
-            <p className="pargraph">
+            <h3 className="pargraph"  style={{color:"#004aac"}}>Team on a Mission</h3>
+            <p className="pargraph"  style={{color:"#092953"}}>
               Bookem is made up of amazing individuals, but it's only through
               teamwork that we achieve greatness. We're committed to helping our
               customers by working together with equal parts humility and
