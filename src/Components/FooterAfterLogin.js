@@ -17,16 +17,16 @@ class FooterAfterLogin extends React.Component {
         <Container>
     <Row className="row:after">
     <Col  className = "column">
-          <Navbar.Brand id="logo"><Link style={{ textDecoration: 'none', color: 'black' }} to="/">BOOKEM</Link></Navbar.Brand>
+          <Navbar.Brand id="logo"><Link id="tabs" style={{ textDecoration: 'none',}} to="/">BOOKEM</Link></Navbar.Brand>
           </Col>
         <Col  className = "nav">     
     
      
-            <Nav.Link style={{textAlign:"left"}} ><Link  style={{ textDecoration: 'none', color: 'black' }} to="/">Home</Link></Nav.Link>
-            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/aboutUs">About Us</Link></Nav.Link>
-            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }} to="/ourTeam">Our Team</Link></Nav.Link>
-            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/profile">Profile</Link></Nav.Link>
-            <Nav.Link style={{textAlign:"left"}} ><Link style={{ textDecoration: 'none', color: 'black' }}  to="/myCollections">My Collections</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link id="tabs"  style={{ textDecoration: 'none', }} to="/">Home</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link id="tabs" style={{ textDecoration: 'none', }}  to="/aboutUs">About Us</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link id="tabs" style={{ textDecoration: 'none', }} to="/ourTeam">Our Team</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link id="tabs" style={{ textDecoration: 'none', }}  to="/profile">Profile</Link></Nav.Link>
+            <Nav.Link style={{textAlign:"left"}} ><Link id="tabs" style={{ textDecoration: 'none', }}  to="/myCollections">My Collections</Link></Nav.Link>
     </Col>
         <Col  className = "column">      
         <p className='linesize'> All right reserved © Bookem | 2022</p>

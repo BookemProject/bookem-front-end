@@ -9,7 +9,7 @@ class HeroSection extends React.Component {
            <div id="hero-container">
             <Figure.Image
                 id="hero-img"
-                src={require("../images/img-home2.jpg")}
+                src={require("../images/homeIMG.jpg")}
               />
               <h1 id="hero-h1">BOOKEM AWAITS</h1>
               <p id="hero-p">What are you waiting for?</p>

@@ -12,7 +12,7 @@ render(){
   return (
 
 <div id="AboutUs">
-<Card id ="myCard" style={{ width: "100%" , height:"100vh", border:"none", borderBottom: "1px solid gray", borderRadius: "0"  }}>
+<Card id ="myCard" style={{ width: "100%" , height:"100vh", border:"none", borderBottom: "1px solid #004aac", borderRadius: "0"  }}>
       <Card.Img id="CardImg" style={{ width: '45%' , height:"auto", marginLeft:"90px", borderRadius:"20px" }} variant="top" src={require("../images/BOOKEM.webp")} />
       <Card.Body>
         <div id = "CardTitle" ><h1 style={{textAlign:"left",paddingTop:"50px" }}>Who Are We!</h1></div>

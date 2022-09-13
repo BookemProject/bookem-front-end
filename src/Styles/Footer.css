@@ -21,6 +21,15 @@
   position: relative;
    
 }
+
+#icons:hover{
+  display: inline-block;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+   
+}
+
 .spacebetween{
     padding: 5px;
     width: 34px;
@@ -37,7 +46,24 @@
   flex-direction: column;
 }
 .top{
-  border-top: 1px solid gray;
+  border-top: 1px solid #004aac;
   
  
+}
+
+#tabs {
+  color : #004aac;
+}
+
+#tabs:hover {
+  color : #092953;
+  cursor:pointer;
+}
+
+.linesize{
+  color : #004aac;
+}
+
+#logo:hover {
+  cursor: pointer;
 }
