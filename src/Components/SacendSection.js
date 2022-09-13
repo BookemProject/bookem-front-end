@@ -1,47 +1,54 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import "../Styles/AboutUs.css";
+
+import "../Styles/SacendSection.css";
 
 
 class SacendSection extends React.Component {
     render() {
       return (
-        <div id="ABOUTUS1">
-        <div className="SECTION">
-        <Container >
-        <Row className="row:after">
-           <Col sm={4} className="column">
-            
-             <Card.Img variant="top" className="sectionimg" src={require("../images/Rent.png")} />
-             </Col>
-           <Col sm={8} className="left">
-           <Row><h3 className="subTitle">Farm Rental</h3></Row>
-           <Row><p className="paragraph1"> The site allows, by displaying all the pictures of the farm, their prices, and locations, to facilitate the customer's choice of the appropriate place for him on the appropriate date for him, in addition to the presence of a list of favorites that saves for the customer what he liked in case he wants to see it again</p></Row>
-           
-           </Col>
-         </Row>
-         </Container>
-         <Container >
-     
-        <Row className="row:after">
-         
-           <Col sm={8} className="left" >
-          <Row><h3 className="subTitleR">Add Farms</h3></Row>
-          <Row><p className="paragraphR"> The site provides distinguished marketing services as it helps in publishing the name of your farm through a form to be filled out by the lessor and adding all the necessary and important information to the customer</p></Row>
-
-          </Col>
-          <Col sm={4} className="column" >
-          <Card.Img variant="top" className="sectionimg" src={require("../images/marketing.png")} />
-            </Col>
-        </Row>
-        </Container>
+        <>
+        <div id="part1">
+        <h1>Our Services</h1>
+        <video width="100%" height="500" controls >
+      <source src={require('../videos/video-1.mp4')} type="video/mp4"/>
+     </video>
+        </div>
+        <div id="part2">
+        <h1>Bookem By The Numbers</h1>
+        <div className="part1">
+          <div className='inner'>
+          <h3>2022</h3>
+          <p>Year Founded</p>
+          </div>
+          <div className='inner'>
+          <h3>350+</h3>
+          <p>Available Farms</p>
+          </div>
+          <div className='inner'>
+          <h3>1000+</h3>
+          <p>Active Users</p>
+          </div>
+          <div className='inner'>
+          <h3>75 JD</h3>
+          <p>Book a Farm Starting With</p>
+          </div>
+          <div className='inner'>
+          <h3>300+</h3>
+          <p>Average Booking Rate Per Month</p>
+          </div>
+          <div className='inner'>
+          <h3>12</h3>
+          <p>Cities Served</p>
+          </div>
+        </div>
+        <p>
+        We're dedicated to our people, guided by our values and powered by our culture. This is the driving force
+        behind our success. It's what has taken us from a <br></br> 5-person startup to a global team of hundreds helping
+        people make billions of dollars in sales and others relaxing after a full week.
+        </p>
          </div>
-         </div>
-
+         </>
         )
     }
   }

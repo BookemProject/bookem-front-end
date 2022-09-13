@@ -1,0 +1,25 @@
+#part2 {
+    align-items: center;
+    padding: 37.5px 200px;
+}
+
+#part1 {
+    align-items: center;
+    padding: 37.5px 200px;
+}
+
+
+.part1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.inner {
+    width: 33%; 
+}
+
+video {
+    padding-top: 50px;
+}
