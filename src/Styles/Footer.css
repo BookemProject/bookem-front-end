@@ -21,11 +21,11 @@
   position: relative;
    
 }
-img{
+.spacebetween{
     padding: 5px;
     width: 34px;
 }
-p {
+.linesize {
   font-size: 15px;
 }
 .nav
