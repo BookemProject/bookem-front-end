@@ -15,33 +15,10 @@ class Services extends React.Component {
               <Col>
                 <div id="wrapper">
                   <Card style={{ width: "18rem" }} id="card">
-                    <Card.Img variant="top" src={require("../images/farm1.jpeg")} id="cardImg"  />
+                    <Card.Img variant="top" src={require("../images/serviceDescover.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Amman</Card.Title>
-                      <Card.Text id="cardText">Wadi Alnaheel, beautiful farms, Explore it.</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
-                </Col>
-                <Col>
-                <div id="wrapper">
-                  <Card style={{ width: "18rem" }} id="card">
-                    <Card.Img variant="top" src={require("../images/farm2.jpg")} id="cardImg"  />
-                    <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Amman</Card.Title>
-                      <Card.Text id="cardText">jarat Alwadi, Dabooq, beautiful farms, Explore it.</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
-                </Col>
-                <Col>
-                <div id="wrapper">
-                  <Card style={{ width: "18rem" }} id="card">
-                    <Card.Img variant="top" src={require("../images/farm3.jpg")} id="cardImg"  />
-                    <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Irbid</Card.Title>
-                      <Card.Text id="cardText">Sun and Moon, beautiful farms, Explore it.
-                       </Card.Text>
+                      <Card.Title id="cardTitle">Discover all our farms</Card.Title>
+                      <Card.Text id="cardText">Finding Jordan's beautiful farms is easy and possible. Join us to Explore them, Bookem helps you organize your vacation with ease!</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
@@ -51,9 +28,32 @@ class Services extends React.Component {
                   <Card style={{ width: "18rem" }} id="card">
                     <Card.Img variant="top" src={require("../images/farm4.jpg")} id="cardImg"  />
                     <Card.Body id="info" style={{ margin: "-10px 0px" }}>
-                      <Card.Title id="cardTitle">Al-Salt</Card.Title>
+                      <Card.Title id="cardTitle">Add your farm</Card.Title>
+                      <Card.Text id="cardText">Bokem helps you with marketing your farm, "enjoy more bookings and more money"</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                </Col>
+                <Col>
+                <div id="wrapper">
+                  <Card style={{ width: "18rem" }} id="card">
+                    <Card.Img variant="top" src={require("../images/serviceOrganize.jpg")} id="cardImg"  />
+                    <Card.Body id="info" style={{ margin: "-10px 0px" }}>
+                      <Card.Title id="cardTitle">Organize your trip</Card.Title>
+                      <Card.Text id="cardText">Bokem helps you find out the details of the farm you like, its location and the weather on the day of your reservation.
+                       </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                </Col>
+                <Col>
+                <div id="wrapper">
+                  <Card style={{ width: "18rem" }} id="card">
+                    <Card.Img variant="top" src={require("../images/serviceGarantee.jpg")} id="cardImg"  />
+                    <Card.Body id="info" style={{ margin: "-10px 0px" }}>
+                      <Card.Title id="cardTitle">Reliable Guarantees</Card.Title>
                       <Card.Text id="cardText">
-                        Wadi Alnaheel, beautiful farms, Explore it.</Card.Text>
+                      Travel with peace of mind: our guarantees protect your exchanges and your farm</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
