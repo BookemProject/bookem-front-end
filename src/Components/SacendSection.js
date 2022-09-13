@@ -10,8 +10,8 @@ class SacendSection extends React.Component {
         <>
         <div id="part1">
         <h1 style={{color:"#004aac"}}>Our Services</h1>
-        <video width="100%" height="500" controls >
-      <source src={require('../videos/video-1.mp4')} type="video/mp4"/>
+          <video width="100%" height="500" controls style={{border:"1px solid #004aac"}}>
+      <source src={require('../videos/Bookem.mp4')} type="video/mp4"/>
      </video>
         </div>
         <div id="part2">
