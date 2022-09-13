@@ -114,12 +114,15 @@ gap:20px;
   
 }
 
-
-#btndelete:hover {
+#ButtonDesignDelete{
   background-color: #ee2f11;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+  color:white;
+}
+#ButtonDesignDelete:hover {
+  
+  background-color: #b11c05;
+ 
+  
 }
 
 #FormBox{
