@@ -10,38 +10,33 @@
     
   }
   #myCard #CardText{
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-left: 40px;
   padding-bottom:30px;
   text-align: left;
+
+  
   
   
     
   }
-  #myCard #CardTitle{
-    font-size: 20px;
-  text-align: center;
-  padding-bottom: 20px;
-  
-  
-  
-      
-    }
-    #myCard #CardImg{
+    /* #myCard #CardImg{
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
         
-      }
+      } */
     hr {
       margin-top: 1rem;
       margin-bottom: 1rem;
       border: 0;
-      border-top: 3px solid rgba(0, 0, 0, 0.1);
     }
-  #mainDiv{
+  /* #mainDiv{
     margin: 50px;
     
   
+  } */
+  #AboutUs {
+    width: 100%;
+    border: none;
   }
-  
   

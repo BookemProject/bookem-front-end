@@ -7,10 +7,9 @@ class HomeBeforeLogin extends React.Component {
     render() {
       return (
            <div>
-           Home Before Login
            <HeroSection />
-           <Services/>
            <Figure />
+           <Services/>
            </div>
         )
     }
