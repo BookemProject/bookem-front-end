@@ -140,13 +140,13 @@ return (
 <>
   
 
-<section className= 'farmoverview'>  
- <div id="about">
+<section className= 'farmoverview' >  
+ <div id="about" >
   <div className="container-fluid">
     <div className="row">
-      <div className="col-xs-12 col-md-6 about-img"> <img  src={this.state.cards.imgURL} alt='farm' style={{width:770 ,height:550}} /></div>
+      <div className="col-xs-12 col-md-6 about-img" style={{backgroundColor:"#f6f6f6"}}> <img  src={this.state.cards.imgURL} alt='farm' style={{width:770 ,height:550, padding:"25px",}} /></div>
       <div className="col-xs-12 col-md-3 col-md-offset-1 bodysection">
-        <div className="about-text">
+        <div className="about-text"  >
           <div className="section-title">
             <h2 className="h2">{this.state.cards.farmName}</h2>
             <hr></hr>
@@ -203,7 +203,7 @@ return (
 								</div>
 								
 								<div className="form-btn">
-									<button id="ButtonDesign" className="checkbutton" onClick={this.handleOpen} >Check</button>
+									<button id="ButtonDesign" className="checkbutton" onClick={this.handleOpen}>Check Out</button>
 								</div>
 							</form>
 						</div>
