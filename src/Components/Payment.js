@@ -19,7 +19,7 @@ return (
         <form className="paymentform">
           <div className="products">
             <h3 className="titlepayment">Checkout</h3>
-            <div className="totalpayment">${this.props.price}</div>
+            <div className="totalpayment">{this.props.price} JD's</div>
           </div>
           <div className="card-details">
             <h3 className="titlepayment">Credit Card Details</h3>
