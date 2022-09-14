@@ -5,6 +5,9 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Figure from 'react-bootstrap/Figure';
 import "../Styles/OurTeam.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 class OurTeam extends React.Component {
   render() {
@@ -47,6 +50,17 @@ class OurTeam extends React.Component {
                       <Card.Title id="name"  style={{color:"#004aac"}}>Noor Alkhateeb</Card.Title>
                       <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
+                    <div id="social-media-icons">
+                      <a href="https://www.facebook.com/noor.alkhateb">
+                        <FontAwesomeIcon icon={faFacebook}/>
+                      </a>
+                      <a href="https://www.linkedin.com/in/noor-al-khateeb-1a1665143/">
+                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                      </a>
+                      <a href="https://github.com/Noor696">
+                        <FontAwesomeIcon icon={faGithub}/>
+                      </a>
+                    </div>
                   </div>
                 </Card>
               </Col>
@@ -62,6 +76,17 @@ class OurTeam extends React.Component {
                       <Card.Title id="name" style={{color:"#004aac"}}>Yazan Alfarra</Card.Title>
                       <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
+                    <div id="social-media-icons">
+                      <a href="https://facebook.com">
+                        <FontAwesomeIcon icon={faFacebook}/>
+                      </a>
+                      <a href="https://www.linkedin.com/in/yazan-alfarra/">
+                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                      </a>
+                      <a href="https://github.com/yazanismail1">
+                        <FontAwesomeIcon icon={faGithub}/>
+                      </a>
+                    </div>
                   </div>
                 </Card>
               </Col>
@@ -77,6 +102,17 @@ class OurTeam extends React.Component {
                       <Card.Title id="name" style={{color:"#004aac"}}>Bashar Nobeh</Card.Title>
                       <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
+                    <div id="social-media-icons">
+                      <a href="https://facebook.com">
+                        <FontAwesomeIcon icon={faFacebook}/>
+                      </a>
+                      <a href="https://linkedin.com">
+                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                      </a>
+                      <a href="https://github.com">
+                        <FontAwesomeIcon icon={faGithub}/>
+                      </a>
+                    </div>
                   </div>
                 </Card>
               </Col>
@@ -92,6 +128,17 @@ class OurTeam extends React.Component {
                       <Card.Title id="name" style={{color:"#004aac"}}>Ihab Abbas</Card.Title>
                       <Card.Text id="job"    style={{color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
+                    <div id="social-media-icons">
+                      <a href="https://facebook.com">
+                        <FontAwesomeIcon icon={faFacebook}/>
+                      </a>
+                      <a href="https://www.linkedin.com/in/ihab-abbas-935a63184/">
+                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                      </a>
+                      <a href="https://github.com/ihababbas">
+                        <FontAwesomeIcon icon={faGithub}/>
+                      </a>
+                    </div>
                   </div>
                 </Card>
               </Col>
@@ -107,6 +154,17 @@ class OurTeam extends React.Component {
                       <Card.Title id="name" style={{color:"#004aac"}}>Ibrahim Almanaseer</Card.Title>
                       <Card.Text id="job1" style={{textAlign:"center", color:"#092953"}}>Full Stack Web developer</Card.Text>
                     </Card.Body>
+                    <div id="social-media-icons">
+                      <a href="https://facebook.com">
+                        <FontAwesomeIcon icon={faFacebook}/>
+                      </a>
+                      <a href="https://www.linkedin.com/in/ibrahim-almanaseer-791624b1">
+                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                      </a>
+                      <a href="https://github.com/Ibrahimnalmanaseer">
+                        <FontAwesomeIcon icon={faGithub}/>
+                      </a>
+                    </div>
                   </div>
                 </Card>
               </Col>
