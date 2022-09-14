@@ -58,34 +58,34 @@ class Profile extends React.Component {
     const index = item.likes.indexOf(user.email);
     if (index > -1) { 
       item.likes.splice(index, 1); 
+      let obj = {
+        farmName: item.farmName,
+        imgURL: item.imgURL,
+        location: item.location,
+        price: item.price,
+        description: item.description,
+        wifi: item.wifi,
+        pool: item.pool,
+        parking: item.parking,
+        bedrooms: item.bedrooms,
+        owner: item.owner,
+        available: null,
+        favoriteEmails:[],
+        likes:item.likes,
+        }
+        axios
+        .put(`https://bookem-server.herokuapp.com/removefav/${item._id}`,obj)
+        .then(
+          swal({
+            title: "succeed ! ",
+            text: `${item.farmName} has been removed from your favorites`,
+            icon: "success",
+            button: "OK!",
+          }),
+          this.componentDidMount(),
+          this.componentDidMount()
+        )
     }
-    let obj = {
-      farmName: item.farmName,
-      imgURL: item.imgURL,
-      location: item.location,
-      price: item.price,
-      description: item.description,
-      wifi: item.wifi,
-      pool: item.pool,
-      parking: item.parking,
-      bedrooms: item.bedrooms,
-      owner: item.owner,
-      available: null,
-      favoriteEmails:[],
-      likes:item.likes,
-      }
-      axios
-      .put(`https://bookem-server.herokuapp.com/removefav/${item._id}`,obj)
-      .then(
-        swal({
-          title: "succeed ! ",
-          text: `${item.farmName} has been removed from your favorites`,
-          icon: "success",
-          button: "OK!",
-        }),
-        this.componentDidMount(),
-        this.componentDidMount()
-      )
   }
 
   render() {
