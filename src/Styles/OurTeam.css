@@ -84,18 +84,18 @@
     margin: 20px 0 10px;
   
   }
-  #container #card #content #contentBx:hover{
+  /* #container #card #content #contentBx:hover{
     transform: translateY(-10px);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
-  
+   */
   #container #card #content #contentBx #job{
     color:black;
     letter-spacing: 2px;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 350;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -106,7 +106,7 @@
     color:black;
     letter-spacing: 2px;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 350;
     gap: 20px;
     /* text-align: center; */
   }
@@ -181,4 +181,16 @@
 
 #body{
   padding: 0 100px;
+}
+
+#social-media-icons{
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; 
+}
+#social-media-icons:hover{
+  box-shadow: 0 0 10px #0000;
+
 }
